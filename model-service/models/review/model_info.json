@@ -1,0 +1,223 @@
+{
+  "run_id": "8406fbae9e6e421197f3d819fbc9c5b6",
+  "model_kind": "catboost_section_Mu_normalized_target_v4",
+  "review_method_version": "GB_rectangular_review_given_As_h0_v1",
+  "experiment_version": "Mu_normalized_target_low_high_guard_v1",
+  "candidate_id": "normalized_quantized7",
+  "candidate_label": "7特征归一化与细化分箱",
+  "qa_only": false,
+  "features": [
+    "b_mm",
+    "h0_mm",
+    "fc_MPa",
+    "fy_MPa",
+    "As_given_mm2",
+    "reinforcement_xi",
+    "capacity_scale_kNm"
+  ],
+  "base_features": [
+    "b_mm",
+    "h0_mm",
+    "fc_MPa",
+    "fy_MPa",
+    "As_given_mm2"
+  ],
+  "physical_features_enabled": true,
+  "physical_feature_definitions": {
+    "reinforcement_xi": "fy_MPa*As_given_mm2/(alpha1*fc_MPa*b_mm*h0_mm)",
+    "capacity_scale_kNm": "alpha1*fc_MPa*b_mm*h0_mm**2/1e6"
+  },
+  "quantization_enabled": true,
+  "target": "Mu_reference_kNm",
+  "target_transform": "capacity_scale",
+  "training_target": "Mu_reference_kNm/capacity_scale_kNm",
+  "prediction_inverse": "raw_model_output*capacity_scale_kNm",
+  "training_weights": "none",
+  "validation_weights": "S**2/mean(S**2)",
+  "validation_metric_to_kNm_multiplier": 2899.5594702230383,
+  "params": {
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "iterations": 1200,
+    "loss_function": "RMSE",
+    "eval_metric": "RMSE",
+    "random_seed": 42,
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "per_float_feature_quantization": [
+      "1:border_count=1024,border_type=UniformAndQuantiles",
+      "4:border_count=1024,border_type=UniformAndQuantiles"
+    ]
+  },
+  "tree_count": 1200,
+  "best_iteration": 1199,
+  "effective_quantization": {
+    "border_count": 254,
+    "feature_border_type": "GreedyLogSum",
+    "per_float_feature_quantization": [
+      "1:border_count=1024,dev_max_subset_size_for_build_borders=,nan_mode=Min,border_type=UniformAndQuantiles",
+      "4:border_count=1024,dev_max_subset_size_for_build_borders=,nan_mode=Min,border_type=UniformAndQuantiles"
+    ]
+  },
+  "dataset_sha256": "1c0f64b8426b39a4199c58aa74f4b3d7ad93457a2d65a8668632754a7d900bfd",
+  "split_sha256": "31734aeffcb870ccef9951a6fdb5b5a60de0371e24a97db7bce77bf0d4b78330",
+  "baseline_run_id": "a9e323bf7db1469aa9d0de8e196542c1",
+  "training_feature_min": {
+    "b_mm": 150.0,
+    "h0_mm": 160.0,
+    "fc_MPa": 14.3,
+    "fy_MPa": 360.0,
+    "As_given_mm2": 60.0,
+    "reinforcement_xi": 0.04240837696335078,
+    "capacity_scale_kNm": 54.912
+  },
+  "training_feature_max": {
+    "b_mm": 450.0,
+    "h0_mm": 855.0,
+    "fc_MPa": 19.1,
+    "fy_MPa": 435.0,
+    "As_given_mm2": 10566.79411764706,
+    "reinforcement_xi": 0.5176470588235297,
+    "capacity_scale_kNm": 6283.159875
+  },
+  "coverage": {
+    "train": {
+      "n": 105984,
+      "groups": [
+        "150x200",
+        "150x250",
+        "150x300",
+        "150x350",
+        "150x400",
+        "200x500",
+        "200x600",
+        "250x500",
+        "250x600",
+        "250x700",
+        "300x600",
+        "300x650",
+        "300x700",
+        "300x750",
+        "300x800",
+        "300x900",
+        "350x750",
+        "400x800",
+        "450x900"
+      ],
+      "source_conditions": 4416,
+      "Mu_max_kNm": 2410.6462523875434,
+      "As_max_mm2": 10566.79411764706,
+      "high_Mu_1500_count": 6581,
+      "high_Mu_1500_percent": 6.209427838164252,
+      "capacity_bins": {
+        "(0.0, 500.0]": 46171,
+        "(500.0, 1000.0]": 33524,
+        "(1000.0, 1500.0]": 19708,
+        "(1500.0, 1750.0]": 3761,
+        "(1750.0, 2000.0]": 1892,
+        "(2000.0, 2500.0]": 928,
+        "(2500.0, inf]": 0
+      },
+      "feature_min": {
+        "b_mm": 150.0,
+        "h0_mm": 160.0,
+        "fc_MPa": 14.3,
+        "fy_MPa": 360.0,
+        "As_given_mm2": 60.0
+      },
+      "feature_max": {
+        "b_mm": 450.0,
+        "h0_mm": 855.0,
+        "fc_MPa": 19.1,
+        "fy_MPa": 435.0,
+        "As_given_mm2": 10566.79411764706
+      }
+    },
+    "validation": {
+      "n": 36864,
+      "groups": [
+        "150x450",
+        "200x200",
+        "200x250",
+        "200x450",
+        "200x550",
+        "350x800",
+        "350x900"
+      ],
+      "source_conditions": 1536,
+      "Mu_max_kNm": 1874.947085190312,
+      "As_max_mm2": 8218.617647058825,
+      "high_Mu_1500_count": 1347,
+      "high_Mu_1500_percent": 3.6539713541666665,
+      "capacity_bins": {
+        "(0.0, 500.0]": 17514,
+        "(500.0, 1000.0]": 8815,
+        "(1000.0, 1500.0]": 9188,
+        "(1500.0, 1750.0]": 1209,
+        "(1750.0, 2000.0]": 138,
+        "(2000.0, 2500.0]": 0,
+        "(2500.0, inf]": 0
+      },
+      "feature_min": {
+        "b_mm": 150.0,
+        "h0_mm": 160.0,
+        "fc_MPa": 14.3,
+        "fy_MPa": 360.0,
+        "As_given_mm2": 80.0
+      },
+      "feature_max": {
+        "b_mm": 350.0,
+        "h0_mm": 855.0,
+        "fc_MPa": 19.1,
+        "fy_MPa": 435.0,
+        "As_given_mm2": 8218.617647058825
+      }
+    },
+    "test": {
+      "n": 36864,
+      "groups": [
+        "200x300",
+        "200x400",
+        "250x550",
+        "250x650",
+        "250x750",
+        "350x700",
+        "400x900"
+      ],
+      "source_conditions": 1536,
+      "Mu_max_kNm": 2142.796668788928,
+      "As_max_mm2": 9392.705882352942,
+      "high_Mu_1500_count": 3533,
+      "high_Mu_1500_percent": 9.583875868055555,
+      "capacity_bins": {
+        "(0.0, 500.0]": 16142,
+        "(500.0, 1000.0]": 9860,
+        "(1000.0, 1500.0]": 7329,
+        "(1500.0, 1750.0]": 2429,
+        "(1750.0, 2000.0]": 970,
+        "(2000.0, 2500.0]": 134,
+        "(2500.0, inf]": 0
+      },
+      "feature_min": {
+        "b_mm": 200.0,
+        "h0_mm": 240.0,
+        "fc_MPa": 14.3,
+        "fy_MPa": 360.0,
+        "As_given_mm2": 120.0
+      },
+      "feature_max": {
+        "b_mm": 400.0,
+        "h0_mm": 855.0,
+        "fc_MPa": 19.1,
+        "fy_MPa": 435.0,
+        "As_given_mm2": 9392.705882352942
+      }
+    }
+  },
+  "test_used_for_selection": false,
+  "M_design_is_model_input": false,
+  "scope": "普通非抗震矩形单筋截面，明确给定h0与As；5项输入现算组合，模型输出按目标变换恢复Mu，无公式代算或截断",
+  "selection_frozen_before_test": true,
+  "selection_rule": "validation_RMSE_with_physical7_low_high_RMSE_and_absolute_bias_guard"
+}

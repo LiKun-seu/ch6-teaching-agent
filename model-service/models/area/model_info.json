@@ -1,0 +1,189 @@
+{
+  "run_id": "18600dc9d0f740c5990c6a893bf575ab",
+  "method_version": "GB_rectangular_area_assumed_single_layer_v1",
+  "model_kind": "catboost_required_area_assumed_single_normalized_target_v2",
+  "features": [
+    "b_mm",
+    "h_mm",
+    "h0_mm",
+    "fc_MPa",
+    "ft_MPa",
+    "fy_MPa",
+    "M_design_kNm",
+    "moment_strength_ratio",
+    "steel_area_scale_mm2",
+    "gross_section_area_mm2",
+    "ft_fy_ratio"
+  ],
+  "target": "As_required_mm2",
+  "h0_basis": "assumed_single_layer_cover_stirrup_diameter_v1",
+  "section_sampling_rule": "h200_800_s50_or900_b_small150_200_else_h3_h2_s50_v1",
+  "params": {
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "iterations": 1200,
+    "loss_function": "RMSE",
+    "eval_metric": "RMSE",
+    "random_seed": 42,
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "per_float_feature_quantization": [
+      "6:border_count=1024,border_type=UniformAndQuantiles",
+      "7:border_count=1024,border_type=UniformAndQuantiles"
+    ]
+  },
+  "tree_count": 1200,
+  "best_iteration": 1199,
+  "dataset_sha256": "ac9cd8ce1a977440823ad035ec6fa4a1211c97ed988f4cac51de0c8d6920dc99",
+  "source_dataset_sha256": "91ddb420420bceb02c726ca3a60e9806bdce7a5383279466cb43949e9c6f9f54",
+  "generation_id": "423a9f30d0974f759d94eea3500003ea",
+  "split_plan_sha256": "8e2c3b662acc91ae560ae97d1b9489728377db11578fc08990a9d4ab226484ae",
+  "sampling_config": {
+    "sampling_version": "balanced_material_geometry_moment_v1",
+    "seed": 42,
+    "valid_per_section": 3000,
+    "redesign_per_section": 300,
+    "design_life_years": [
+      50
+    ],
+    "environment_classes": [
+      "I",
+      "IIa",
+      "IIb",
+      "IIIa",
+      "IIIb"
+    ],
+    "stirrup_diameters_mm": [
+      8,
+      10
+    ],
+    "assumed_longitudinal_d_mm": 20,
+    "assumed_rows": 1,
+    "concrete_grades": [
+      "C30",
+      "C35",
+      "C40"
+    ],
+    "steel_grades": [
+      "HRB400",
+      "HRB500"
+    ],
+    "moment_strata": [
+      {
+        "name": "r_0_020",
+        "low": 0.0,
+        "high": 0.2,
+        "weight": 0.2
+      },
+      {
+        "name": "r_020_060",
+        "low": 0.2,
+        "high": 0.6,
+        "weight": 0.3
+      },
+      {
+        "name": "r_060_085",
+        "low": 0.6,
+        "high": 0.85,
+        "weight": 0.25
+      },
+      {
+        "name": "r_085_100",
+        "low": 0.85,
+        "high": 1.0,
+        "weight": 0.25
+      }
+    ],
+    "redesign_ratio_range": [
+      1.01,
+      1.15
+    ],
+    "note": "单排和纵筋直径仅为预估位置假设；不选筋，不证明可单排放下。采样比例不是规范规定。"
+  },
+  "design_scope": "ordinary_nonseismic_rectangular_singly_reinforced",
+  "moment_basis": "design_moment_including_gamma0",
+  "test_used_for_selection": false,
+  "actual_layout_verified": false,
+  "training_feature_min": {
+    "b_mm": 150.0,
+    "h_mm": 200.0,
+    "h0_mm": 130.0,
+    "fc_MPa": 14.3,
+    "ft_MPa": 1.43,
+    "fy_MPa": 360.0,
+    "M_design_kNm": 0.0096839023578219,
+    "moment_strength_ratio": 8.651904788129328e-06,
+    "steel_area_scale_mm2": 715.0,
+    "gross_section_area_mm2": 30000.0,
+    "ft_fy_ratio": 0.0032873563218390805
+  },
+  "training_feature_max": {
+    "b_mm": 400.0,
+    "h_mm": 900.0,
+    "h0_mm": 862.0,
+    "fc_MPa": 19.1,
+    "ft_MPa": 1.71,
+    "fy_MPa": 435.0,
+    "M_design_kNm": 1895.3007750344796,
+    "moment_strength_ratio": 0.3836676662178429,
+    "steel_area_scale_mm2": 16171.333333333336,
+    "gross_section_area_mm2": 320000.0,
+    "ft_fy_ratio": 0.00475
+  },
+  "experiment_version": "area_normalized_target_low_high_guard_v1",
+  "qa_only": false,
+  "base_features": [
+    "b_mm",
+    "h_mm",
+    "h0_mm",
+    "fc_MPa",
+    "ft_MPa",
+    "fy_MPa",
+    "M_design_kNm"
+  ],
+  "physical_features": [
+    "moment_strength_ratio",
+    "steel_area_scale_mm2",
+    "gross_section_area_mm2",
+    "ft_fy_ratio"
+  ],
+  "feature_definitions": {
+    "moment_strength_ratio": {
+      "formula": "M_design_kNm*1e6/(alpha1*fc_MPa*b_mm*h0_mm**2)",
+      "unit": "无量纲",
+      "meaning": "弯矩需求相对于给定截面抗弯强度尺度的大小"
+    },
+    "steel_area_scale_mm2": {
+      "formula": "alpha1*fc_MPa*b_mm*h0_mm/fy_MPa",
+      "unit": "mm²",
+      "meaning": "将相对受压区高度换算为钢筋面积的尺度，不是所需面积"
+    },
+    "gross_section_area_mm2": {
+      "formula": "b_mm*h_mm",
+      "unit": "mm²",
+      "meaning": "最小配筋面积计算的截面面积尺度"
+    },
+    "ft_fy_ratio": {
+      "formula": "ft_MPa/fy_MPa",
+      "unit": "无量纲",
+      "meaning": "最小配筋率中材料强度比的基础项"
+    }
+  },
+  "baseline_run_id": "e98f8b8d0f784f679419741ab25708d3",
+  "selection_basis": "validation_RMSE_with_physical11_low_high_moment_large_area_guard",
+  "early_stopping_rounds": 80,
+  "use_best_model": true,
+  "feature_selection_role": "exploratory_comparison_on_existing_split",
+  "physical_features_enabled": true,
+  "candidate_id": "normalized_fine11",
+  "candidate_label": "11特征归一化与强度比分箱",
+  "fine_ratio_quantization": true,
+  "target_transform": "area_scale",
+  "training_target": "As_required_mm2/steel_area_scale_mm2",
+  "prediction_inverse": "raw_model_output*steel_area_scale_mm2",
+  "training_weights": "none",
+  "validation_weights": "S_A**2/mean(S_A**2)",
+  "validation_metric_to_mm2_multiplier": 7901.760264201525,
+  "selection_frozen_before_test": true
+}

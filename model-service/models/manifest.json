@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "release": "2026-10-22-v1",
+  "models": {
+    "area": {
+      "file": "area/area_model.cbm",
+      "bytes": 1384296,
+      "sha256": "5742f93a0835bd973c39057f18ebd1c9a9bf2ff44d0a13a6fd0477b8af20cf0f",
+      "metadata_file": "area/model_info.json",
+      "metadata_sha256": "ad6f6b83dc575b8bb90f1785188e05f3d5535ab73d4ffb1eac7cd6af56248564",
+      "run_id": "18600dc9d0f740c5990c6a893bf575ab",
+      "model_kind": "catboost_required_area_assumed_single_normalized_target_v2",
+      "candidate_id": "normalized_fine11",
+      "features": [
+        "b_mm",
+        "h_mm",
+        "h0_mm",
+        "fc_MPa",
+        "ft_MPa",
+        "fy_MPa",
+        "M_design_kNm",
+        "moment_strength_ratio",
+        "steel_area_scale_mm2",
+        "gross_section_area_mm2",
+        "ft_fy_ratio"
+      ],
+      "tree_count": 1200,
+      "target_transform": "area_scale"
+    },
+    "review": {
+      "file": "review/Mu_model.cbm",
+      "bytes": 1382104,
+      "sha256": "5b3372955ef579d224f2975acffcb6fcebeb1e28736ddd063d331eef557d02e8",
+      "metadata_file": "review/model_info.json",
+      "metadata_sha256": "e838e5c40e089d7df600123c1ea7aa122f641b6650e3b2463b35c4df9a48a144",
+      "run_id": "8406fbae9e6e421197f3d819fbc9c5b6",
+      "model_kind": "catboost_section_Mu_normalized_target_v4",
+      "candidate_id": "normalized_quantized7",
+      "features": [
+        "b_mm",
+        "h0_mm",
+        "fc_MPa",
+        "fy_MPa",
+        "As_given_mm2",
+        "reinforcement_xi",
+        "capacity_scale_kNm"
+      ],
+      "tree_count": 1200,
+      "target_transform": "capacity_scale"
+    },
+    "classify_a": {
+      "file": "classify_a/classification_model.cbm",
+      "bytes": 321352,
+      "sha256": "27226470156a02b7b5068a59b1fbea9c966f31c6fb53b64385d9638709c17f7b",
+      "metadata_file": "classify_a/model_info.json",
+      "metadata_sha256": "15ef4a6f458acb4923a6f29311bebf394a06ff617a1d54c10e5bab287ab6b7cf",
+      "run_id": "211e8ce946034986af9d9b929aedf201",
+      "model_kind": "catboost_reinforcement_classification_a_physical_weights_v2",
+      "candidate_id": "physical10",
+      "features": [
+        "b_mm",
+        "h_mm",
+        "h0_mm",
+        "fc_MPa",
+        "ft_MPa",
+        "fy_MPa",
+        "M_design_kNm",
+        "moment_strength_ratio",
+        "moment_reinforcement_scale_ratio",
+        "ft_fy_ratio"
+      ],
+      "tree_count": 136,
+      "target_transform": null,
+      "task": "A",
+      "class_names": [
+        "少筋",
+        "适筋",
+        "超筋"
+      ],
+      "class_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    "classify_b": {
+      "file": "classify_b/classification_model.cbm",
+      "bytes": 208256,
+      "sha256": "21fb0f177d0c6c1966c21c33fdde98b8b0c540681bd09018e2b1ea7d90ebd66c",
+      "metadata_file": "classify_b/model_info.json",
+      "metadata_sha256": "5d0f25a97e014b1966137ccc1955d17ac785fe7c60516088f7317ba91b0d6feb",
+      "run_id": "16a8dc0e821d49a7a333e70dafa7a853",
+      "model_kind": "catboost_reinforcement_classification_b_physical_weights_v2",
+      "candidate_id": "physical_balanced10",
+      "features": [
+        "b_mm",
+        "h_mm",
+        "h0_mm",
+        "fc_MPa",
+        "ft_MPa",
+        "fy_MPa",
+        "As_provided_mm2",
+        "yield_assumed_xi",
+        "rho_provided_gross",
+        "ft_fy_ratio"
+      ],
+      "tree_count": 83,
+      "target_transform": null,
+      "task": "B",
+      "class_names": [
+        "少筋",
+        "适筋",
+        "超筋"
+      ],
+      "class_ids": [
+        0,
+        1,
+        2
+      ]
+    }
+  }
+}

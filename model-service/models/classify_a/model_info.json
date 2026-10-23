@@ -1,0 +1,101 @@
+{
+  "run_id": "211e8ce946034986af9d9b929aedf201",
+  "model_kind": "catboost_reinforcement_classification_a_physical_weights_v2",
+  "method_version": "GB_rectangular_area_assumed_single_layer_v1",
+  "task": "A",
+  "candidate_id": "physical10",
+  "candidate_label": "加入物理特征",
+  "features": [
+    "b_mm",
+    "h_mm",
+    "h0_mm",
+    "fc_MPa",
+    "ft_MPa",
+    "fy_MPa",
+    "M_design_kNm",
+    "moment_strength_ratio",
+    "moment_reinforcement_scale_ratio",
+    "ft_fy_ratio"
+  ],
+  "base_features": [
+    "b_mm",
+    "h_mm",
+    "h0_mm",
+    "fc_MPa",
+    "ft_MPa",
+    "fy_MPa",
+    "M_design_kNm"
+  ],
+  "physical_features_enabled": true,
+  "physical_feature_definitions": {
+    "moment_strength_ratio": "M_design_kNm*1e6/(alpha1*fc_MPa*b_mm*h0_mm**2)",
+    "moment_reinforcement_scale_ratio": "M_design_kNm*1e6/(fy_MPa*b_mm*h_mm*h0_mm)",
+    "ft_fy_ratio": "ft_MPa/fy_MPa"
+  },
+  "class_names": [
+    "少筋",
+    "适筋",
+    "超筋"
+  ],
+  "class_semantics": [
+    "最小配筋控制的设计状态",
+    "正常单筋受弯设计状态",
+    "超过当前单筋设计弯矩界限"
+  ],
+  "target": "class_id",
+  "input_role": "给定弯矩的设计状态，三类别名称仅为简称",
+  "scope": "普通非抗震、非预应力矩形截面，不计受压钢筋贡献；仅按当前最小配筋和单筋界限定义分类",
+  "params": {
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "iterations": 1200,
+    "loss_function": "MultiClass",
+    "eval_metric": "TotalF1:average=Macro",
+    "random_seed": 42,
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "per_float_feature_quantization": [
+      "6:border_count=1024,border_type=UniformAndQuantiles"
+    ]
+  },
+  "effective_class_weights": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "tree_count": 136,
+  "best_iteration": 135,
+  "early_stopping_rounds": 80,
+  "dataset_sha256": "ac9cd8ce1a977440823ad035ec6fa4a1211c97ed988f4cac51de0c8d6920dc99",
+  "split_sha256": "8e2c3b662acc91ae560ae97d1b9489728377db11578fc08990a9d4ab226484ae",
+  "qa_only": false,
+  "test_used_for_selection": false,
+  "training_feature_min": {
+    "b_mm": 150.0,
+    "h_mm": 200.0,
+    "h0_mm": 130.0,
+    "fc_MPa": 14.3,
+    "ft_MPa": 1.43,
+    "fy_MPa": 360.0,
+    "M_design_kNm": 0.0096839023578219,
+    "moment_strength_ratio": 8.651904788129328e-06,
+    "moment_reinforcement_scale_ratio": 3.673916749027652e-07,
+    "ft_fy_ratio": 0.0032873563218390805
+  },
+  "training_feature_max": {
+    "b_mm": 400.0,
+    "h_mm": 900.0,
+    "h0_mm": 862.0,
+    "fc_MPa": 19.1,
+    "ft_MPa": 1.71,
+    "fy_MPa": 435.0,
+    "M_design_kNm": 2175.1413829520434,
+    "moment_strength_ratio": 0.4412169101671883,
+    "moment_reinforcement_scale_ratio": 0.022303652259464783,
+    "ft_fy_ratio": 0.00475
+  },
+  "experiment_version": "classification_physics_weights_ablation_v1",
+  "baseline_run_id": "1d5de83ae4b2414093f04d1162569cf9",
+  "selection_frozen_before_test": true
+}

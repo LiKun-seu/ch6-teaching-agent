@@ -1,0 +1,44 @@
+{
+  "task": "B",
+  "model_kind": "catboost_reinforcement_classification_b_physical_weights_v2",
+  "dataset": "beam_section_review_dataset.csv",
+  "features": [
+    "b_mm",
+    "h_mm",
+    "h0_mm",
+    "fc_MPa",
+    "ft_MPa",
+    "fy_MPa",
+    "As_provided_mm2"
+  ],
+  "class_names": [
+    "少筋",
+    "适筋",
+    "超筋"
+  ],
+  "class_semantics": [
+    "实配面积低于最小配筋要求",
+    "实配面积位于最小配筋与单筋界限之间",
+    "实配面积超过单筋屈服简式界限"
+  ],
+  "source_dir": "F:\\学习\\东南\\秦老师\\教创赛\\catboost训练\\规范配筋状态分类_B方案_给定实配面积",
+  "dataset_sha256": "3c5810dbcb35e70af54fda68e29357b68bf0e30197313ae02f00363b078e9017",
+  "split_sha256": "6304bdc078e591d7a7b44ccf927b67707aaac51176351bf495810583843aaf2f",
+  "params": {
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "iterations": 1200,
+    "loss_function": "MultiClass",
+    "eval_metric": "TotalF1:average=Macro",
+    "random_seed": 42,
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "per_float_feature_quantization": [
+      "6:border_count=1024,border_type=UniformAndQuantiles"
+    ]
+  },
+  "early_stopping_rounds": 80,
+  "input_role": "给定实配面积和h0的配筋状态，不判断承载力能否满足某个M",
+  "scope": "普通非抗震、非预应力矩形截面，不计受压钢筋贡献；仅按当前最小配筋和单筋界限定义分类"
+}

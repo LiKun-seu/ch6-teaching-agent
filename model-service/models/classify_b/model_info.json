@@ -1,0 +1,102 @@
+{
+  "run_id": "16a8dc0e821d49a7a333e70dafa7a853",
+  "model_kind": "catboost_reinforcement_classification_b_physical_weights_v2",
+  "method_version": "GB_rectangular_review_given_As_h0_v1",
+  "task": "B",
+  "candidate_id": "physical_balanced10",
+  "candidate_label": "物理特征与权重",
+  "features": [
+    "b_mm",
+    "h_mm",
+    "h0_mm",
+    "fc_MPa",
+    "ft_MPa",
+    "fy_MPa",
+    "As_provided_mm2",
+    "yield_assumed_xi",
+    "rho_provided_gross",
+    "ft_fy_ratio"
+  ],
+  "base_features": [
+    "b_mm",
+    "h_mm",
+    "h0_mm",
+    "fc_MPa",
+    "ft_MPa",
+    "fy_MPa",
+    "As_provided_mm2"
+  ],
+  "physical_features_enabled": true,
+  "physical_feature_definitions": {
+    "yield_assumed_xi": "fy_MPa*As_provided_mm2/(alpha1*fc_MPa*b_mm*h0_mm)",
+    "rho_provided_gross": "As_provided_mm2/(b_mm*h_mm)",
+    "ft_fy_ratio": "ft_MPa/fy_MPa"
+  },
+  "class_names": [
+    "少筋",
+    "适筋",
+    "超筋"
+  ],
+  "class_semantics": [
+    "实配面积低于最小配筋要求",
+    "实配面积位于最小配筋与单筋界限之间",
+    "实配面积超过单筋屈服简式界限"
+  ],
+  "target": "class_id",
+  "input_role": "给定实配面积和h0的配筋状态，不判断承载力能否满足某个M",
+  "scope": "普通非抗震、非预应力矩形截面，不计受压钢筋贡献；仅按当前最小配筋和单筋界限定义分类",
+  "params": {
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 3,
+    "iterations": 1200,
+    "loss_function": "MultiClass",
+    "eval_metric": "TotalF1:average=Macro;use_weights=false",
+    "random_seed": 42,
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "per_float_feature_quantization": [
+      "6:border_count=1024,border_type=UniformAndQuantiles"
+    ],
+    "auto_class_weights": "Balanced"
+  },
+  "effective_class_weights": [
+    4.0,
+    1.0,
+    4.0
+  ],
+  "tree_count": 83,
+  "best_iteration": 82,
+  "early_stopping_rounds": 80,
+  "dataset_sha256": "3c5810dbcb35e70af54fda68e29357b68bf0e30197313ae02f00363b078e9017",
+  "split_sha256": "6304bdc078e591d7a7b44ccf927b67707aaac51176351bf495810583843aaf2f",
+  "qa_only": false,
+  "test_used_for_selection": false,
+  "training_feature_min": {
+    "b_mm": 150.0,
+    "h_mm": 200.0,
+    "h0_mm": 160.03455,
+    "fc_MPa": 14.3,
+    "ft_MPa": 1.43,
+    "fy_MPa": 360.0,
+    "As_provided_mm2": 30.01681374616154,
+    "yield_assumed_xi": 0.021459907992002876,
+    "rho_provided_gross": 0.0010004079614458737,
+    "ft_fy_ratio": 0.0032873563218390805
+  },
+  "training_feature_max": {
+    "b_mm": 400.0,
+    "h_mm": 900.0,
+    "h0_mm": 854.791727,
+    "fc_MPa": 19.1,
+    "ft_MPa": 1.71,
+    "fy_MPa": 435.0,
+    "As_provided_mm2": 9533.396425221415,
+    "yield_assumed_xi": 0.5952862652309376,
+    "rho_provided_gross": 0.02990204602529381,
+    "ft_fy_ratio": 0.00475
+  },
+  "experiment_version": "classification_physics_weights_ablation_v1",
+  "baseline_run_id": "82141cb596a64151bf546d2abcb529b3",
+  "selection_frozen_before_test": true
+}

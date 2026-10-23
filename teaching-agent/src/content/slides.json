@@ -1,0 +1,2591 @@
+[
+ {
+  "page": 1,
+  "section": "封面/导读",
+  "title": "第 6 章 钢筋混凝土梁承载力计算原理",
+  "bullets": [
+   "第 6 章 钢筋混凝土梁承载力计算原理",
+   "主讲教师：秦卫红",
+   "Tel: 13776681820",
+   "4.1 概述"
+  ],
+  "image": "/slides/slide-001.png"
+ },
+ {
+  "page": 2,
+  "section": "封面/导读",
+  "title": "Questions",
+  "bullets": [
+   "Questions",
+   "1 Why are there different types of RC members?",
+   "2 What are the functions of reinforcement detailing?",
+   "3 How to simplify the calculation of flexural strength?",
+   "4 How to determine the maximum and minimum",
+   "reinforcement ratio for RC beams?",
+   "5 How to design RC beam when the maximum or",
+   "minimum reinforcement ratio are not satisfied?",
+   "6 How to design T-section RC beam?",
+   "7.1 概述"
+  ],
+  "image": "/slides/slide-002.png"
+ },
+ {
+  "page": 3,
+  "section": "K1 概述",
+  "title": "6.1 概 述（ Introduction ）",
+  "bullets": [
+   "受弯构件",
+   "6.1 概 述（ Introduction ）",
+   "◆ 结构中常用的梁、板是典型的受弯构件",
+   "◆ 梁的截面形式常见的有矩形、 T 形、工形、箱形、 Γ 形、 Π 形",
+   "◆ 现浇单向板为矩形截面，高度 h 取板厚，宽度 b 取单位宽度",
+   "（ b=1000mm ）",
+   "◆ 预制板常见的有空心板、槽型板等",
+   "◆ 考虑到施工方便和结构整体性要求，工程中也有采用预制和现浇结",
+   "合的方法，形成叠合梁和叠合板"
+  ],
+  "image": "/slides/slide-003.png"
+ },
+ {
+  "page": 4,
+  "section": "K1 概述",
+  "title": "• 常用截面",
+  "bullets": [
+   "• 常用截面",
+   "– 受压区、受拉区、受拉钢筋、受压钢筋、中性轴"
+  ],
+  "image": "/slides/slide-004.png"
+ },
+ {
+  "page": 5,
+  "section": "K1 概述",
+  "title": "矩形",
+  "bullets": [
+   "矩形",
+   "◎",
+   "T形",
+   "dooooo0g",
+   "矩形板",
+   "预制板",
+   "后浇混凝土",
+   "000",
+   "工形",
+   "预制T形梁",
+   "叠合梁",
+   "0000"
+  ],
+  "image": "/slides/slide-005.png"
+ },
+ {
+  "page": 6,
+  "section": "K1 概述",
+  "title": "（a）",
+  "bullets": [
+   "（a）",
+   "（c）",
+   "｛d）",
+   "（b）",
+   "（I",
+   "！",
+   "¢¢",
+   "1g）",
+   "ih）",
+   "图1 5-10 桥梁中常用截面形式"
+  ],
+  "image": "/slides/slide-006.png"
+ },
+ {
+  "page": 7,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "6.2 正截面受弯承载力",
+  "bullets": [
+   "6.2 正截面受弯承载力",
+   "6.2.1 构造要求",
+   "◆ 为统一模板尺寸、便于施工，通常采用：",
+   "梁宽度 b=120 、 150 、 180 、 200 、",
+   "220 、 250 、 300 、 350 、… (mm)",
+   "d=10~32mm( 常用 )",
+   "h0=h-as",
+   "单排 as= 40mm",
+   "双排 aS= 65mm",
+   "梁高度 h=250 、 300 、……、 750 、",
+   "800 、 900 、… (mm) 。"
+  ],
+  "image": "/slides/slide-007.png"
+ },
+ {
+  "page": 8,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "◆梁高与跨度之比（高跨比 ）：满足刚度要求",
+  "bullets": [
+   "◆梁高与跨度之比（高跨比 ）：满足刚度要求",
+   "h/l",
+   "• 主梁为 1/8~1/12",
+   "• 次梁为 1/15~1/20",
+   "• 独立梁不小于 1/15 （简支）和 1/20 （连续）",
+   "◆梁高与梁宽之比（高宽比 ）",
+   "• 矩形截面梁一般 2~2.5",
+   "• T 形截面梁一般 2.5~4.0",
+   "• 其它，如薄腹梁、宽扁梁。",
+   "h/b"
+  ],
+  "image": "/slides/slide-008.png"
+ },
+ {
+  "page": 9,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "混凝土保护层",
+  "bullets": [
+   "混凝土保护层"
+  ],
+  "image": "/slides/slide-009.png"
+ },
+ {
+  "page": 10,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "普通钢筋抗压强度设计值产，取与抗拉强度相同。在偏心受",
+  "bullets": [
+   "普通钢筋抗压强度设计值产，取与抗拉强度相同。在偏心受",
+   "压状态下，混凝土所能达到的压应变可以保证 500MPa 级钢筋的",
+   "抗压强度达到与抗拉强度相同的值，因此本次局部修订中将",
+   "500MPa 级钢筋的抗压强度设计值从 410N/mm” 调整到 435N/",
+   "mm’；对轴心受压构件，由于混凝土压应力达到f。时混凝土压",
+   "应变为 0.002，当采用500MPa级钢筋时，其钢筋的抗压强度设",
+   "计值取为400N/mm’。而预应力筋抗压强度设计值较小，这是由",
+   "于构件中钢筋受到混凝土极限受压应变的控制，受压强度受到制",
+   "约的缘放。",
+   "根据试验研究结果，限定受剪、受扭、受冲切箍筋的抗拉强",
+   "度设计值fw不大于 360N/mm’；但用作围箍约束混凝土的间接",
+   "配筋时，其强度设计值不受此限。"
+  ],
+  "image": "/slides/slide-010.png"
+ },
+ {
+  "page": 11,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "梁的构造要求：",
+  "bullets": [
+   "梁的构造要求：",
+   "◆为保证 RC 结构的耐久性、防火性以及",
+   "钢筋与混凝土的粘结性能，钢筋的混凝",
+   "土 保 护 层 (cover) 厚 度 一 般 不 小 于",
+   "20mm ；",
+   "◆ 为 保 证 混 凝 土 浇 注 的 密 实 性",
+   "(consolidation) ，梁底部钢筋的净距",
+   "(clear spacing) 不 小 于 25mm 及",
+   "钢筋直径 d ，梁上部钢筋的净距不小于",
+   "30mm 及 1.5 d ；",
+   "◆ 梁底部纵向受力钢筋一般不少于 2 根，",
+   "直径常用 10~32mm 。钢筋数量较多"
+  ],
+  "image": "/slides/slide-011.png"
+ },
+ {
+  "page": 12,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "◆ 梁上部无受压钢筋时，需配置 2 根架立筋",
+  "bullets": [
+   "◆ 梁上部无受压钢筋时，需配置 2 根架立筋",
+   "(hanger bars) ，以便与箍筋和梁底部纵筋形",
+   "成钢筋骨架，直径一般不小于 10mm ；",
+   "◆ 梁高度 h>500mm 时，要求在梁两侧沿高度",
+   "每隔 250 设置一根纵向构造钢筋 (skin",
+   "reinforcement) ，以减小梁腹部的裂缝宽度，",
+   "直径≥ 10mm ；",
+   "d=10~32mm( 常用 )",
+   "h0=h-as",
+   "单排 a= 40mm",
+   "双排 a= 60~65mm",
+   "◆ 矩形截面梁高宽比 h/b=2.0~3.5"
+  ],
+  "image": "/slides/slide-012.png"
+ },
+ {
+  "page": 13,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "混凝土",
+  "bullets": [
+   "混凝土"
+  ],
+  "image": "/slides/slide-013.png"
+ },
+ {
+  "page": 14,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "第 14 页",
+  "bullets": [],
+  "image": "/slides/slide-014.png"
+ },
+ {
+  "page": 15,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "第 15 页",
+  "bullets": [],
+  "image": "/slides/slide-015.png"
+ },
+ {
+  "page": 16,
+  "section": "K2 正截面承载力·构造要求",
+  "title": "板的构造要求：",
+  "bullets": [
+   "板的构造要求：",
+   "◆ 混凝土保护层厚度一般不小于 15mm 和钢筋直径 d ；",
+   "◆ 钢筋直径通常为 6~12mm ，Ⅰ级钢筋；",
+   "板厚度较大时，钢筋直径可用 14~18mm ，Ⅱ级钢筋；",
+   "◆ 受力钢筋间距一般在 70~200mm 之间；",
+   "◆ 垂直于受力钢筋的方向应布置分布钢筋，以便将荷载均匀地传递给受力钢筋，",
+   "并便于在施工中固定受力钢筋的位置，同时也可抵抗温度和收缩等产生的应力。"
+  ],
+  "image": "/slides/slide-016.png"
+ },
+ {
+  "page": 17,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "6.2.2 正截面受弯试验研究 (Test Research Analysis )",
+  "bullets": [
+   "6.2.2 正截面受弯试验研究 (Test Research Analysis )",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "s",
+   "平截面假定",
+   "h0 ：有效截面高度"
+  ],
+  "image": "/slides/slide-017.png"
+ },
+ {
+  "page": 18,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "s"
+  ],
+  "image": "/slides/slide-018.png"
+ },
+ {
+  "page": 19,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "M",
+   "s"
+  ],
+  "image": "/slides/slide-019.png"
+ },
+ {
+  "page": 20,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "s",
+   "Mcr",
+   "ft"
+  ],
+  "image": "/slides/slide-020.png"
+ },
+ {
+  "page": 21,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "M",
+   "s"
+  ],
+  "image": "/slides/slide-021.png"
+ },
+ {
+  "page": 22,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "s",
+   "My",
+   "fy"
+  ],
+  "image": "/slides/slide-022.png"
+ },
+ {
+  "page": 23,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "s",
+   "M",
+   "fy"
+  ],
+  "image": "/slides/slide-023.png"
+ },
+ {
+  "page": 24,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "s",
+   "Mu",
+   "fy"
+  ],
+  "image": "/slides/slide-024.png"
+ },
+ {
+  "page": 25,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "M/Mu",
+   "Mu",
+   "1.0"
+  ],
+  "image": "/slides/slide-025.png"
+ },
+ {
+  "page": 26,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "M/Mu",
+   "Mu",
+   "1.0"
+  ],
+  "image": "/slides/slide-026.png"
+ },
+ {
+  "page": 27,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "M/Mu",
+   "1.0",
+   "0.8"
+  ],
+  "image": "/slides/slide-027.png"
+ },
+ {
+  "page": 28,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior of RC Beam)",
+   "b",
+   "c",
+   "xn",
+   "h",
+   "h0",
+   "",
+   "a",
+   "As",
+   "M/Mu",
+   "1.0",
+   "0.8"
+  ],
+  "image": "/slides/slide-028.png"
+ },
+ {
+  "page": 29,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁的受弯性能 (Flexural Behavior",
+  "bullets": [
+   "适筋梁的受弯性能 (Flexural Behavior",
+   "of RC Beam)",
+   "M/M",
+   "u",
+   "M/Mu",
+   "Mu",
+   "1.0",
+   "My",
+   "0.8",
+   "Ⅱ a",
+   "Ⅲ",
+   "Ⅲa"
+  ],
+  "image": "/slides/slide-029.png"
+ },
+ {
+  "page": 30,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "对于配筋合适的 RC 梁，破坏阶段（ III ）承载力基本保持不变，变形可以持",
+  "bullets": [
+   "对于配筋合适的 RC 梁，破坏阶段（ III ）承载力基本保持不变，变形可以持",
+   "续很长，表明在完全破坏以前具有很好的变形能力，有明显的预兆，这种破坏称",
+   "为“延性破坏”",
+   "M/Mu",
+   "Mu",
+   "1.0",
+   "My",
+   "0.8",
+   "0.6",
+   "Ⅱ a",
+   "Ⅲ",
+   "Ⅲa"
+  ],
+  "image": "/slides/slide-030.png"
+ },
+ {
+  "page": 31,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "Ⅰa 状态：计算 Mcr 的依据",
+  "bullets": [
+   "Ⅰa 状态：计算 Mcr 的依据",
+   "M/Mu",
+   "Mu",
+   "1.0",
+   "Mcr",
+   "My",
+   "0.8",
+   "0.6",
+   "Ⅱ a",
+   "Ⅲ",
+   "Ⅲa",
+   "Ⅱ"
+  ],
+  "image": "/slides/slide-031.png"
+ },
+ {
+  "page": 32,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "Ⅰa 状态：计算 Mcr 的依据",
+  "bullets": [
+   "Ⅰa 状态：计算 Mcr 的依据",
+   "Ⅱ阶段：计算裂缝、刚度的依据",
+   "M/Mu",
+   "Mu",
+   "1.0",
+   "M",
+   "My",
+   "0.8",
+   "0.6",
+   "s",
+   "Ⅱ 阶 段 截 面 应 力 和 应 变 分 布",
+   "Ⅱ a"
+  ],
+  "image": "/slides/slide-032.png"
+ },
+ {
+  "page": 33,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "Ⅰa 状态：计算 Mcr 的依据",
+  "bullets": [
+   "Ⅰa 状态：计算 Mcr 的依据",
+   "Ⅱ阶段：计算裂缝、刚度的依据",
+   "Ⅱa 状态：计算 My 的依据",
+   "M/Mu",
+   "Mu",
+   "1.0",
+   "My",
+   "My",
+   "0.8",
+   "0.6",
+   "Ⅱ a",
+   "Ⅲ"
+  ],
+  "image": "/slides/slide-033.png"
+ },
+ {
+  "page": 34,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "cu=0.003 ~ 0.005 ，超过该应",
+  "bullets": [
+   "cu=0.003 ~ 0.005 ，超过该应",
+   "Ⅰa 状态：计算 Mcr 的依据",
+   "Ⅱ阶段：计算裂缝、刚度的依据",
+   "变值，压区混凝土即开始压坏，梁",
+   "达到极限承载力。该应变值是计算",
+   "极限弯矩 Mu 的标志。",
+   "Ⅱa 状态：计算 My 的依据",
+   "Ⅲa 状态：计算 Mu 的依据",
+   "M/Mu",
+   "cu",
+   "Mu",
+   "1.0"
+  ],
+  "image": "/slides/slide-034.png"
+ },
+ {
+  "page": 35,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "受力特点：",
+  "bullets": [
+   "受力特点：",
+   "材力中线弹性梁",
+   "R",
+   "C",
+   "梁",
+   "原因",
+   "中和轴不变",
+   "中和轴变化",
+   "ft<",
+   "<fc",
+   "P",
+   "-f、M"
+  ],
+  "image": "/slides/slide-035.png"
+ },
+ {
+  "page": 36,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "适筋梁",
+  "bullets": [
+   "适筋梁"
+  ],
+  "image": "/slides/slide-036.png"
+ },
+ {
+  "page": 37,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "◆配筋率的影响",
+  "bullets": [
+   "◆配筋率的影响",
+   "钢筋混凝土构件是由钢筋和混凝土两种材料，随着它们的配比变化，",
+   "将对其受力性能和破坏形态有很大影响。",
+   "b",
+   "h",
+   "h0",
+   "配筋率",
+   "As",
+   "",
+   "bh0",
+   "Reinforcement Ratio",
+   "a"
+  ],
+  "image": "/slides/slide-037.png"
+ },
+ {
+  "page": 38,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "c",
+  "bullets": [
+   "c",
+   "配筋率增大",
+   "My",
+   "xn",
+   "C",
+   "屈服弯矩 My 增大",
+   "屈服时， C 增大， xa 增加",
+   "c 也相应增大",
+   "My→Mu ，  c→cu 的过程缩短",
+   "Ⅱ a状 态 截 面 应 力 和 应 变 分 布",
+   "cu",
+   "第Ⅲ阶段的变形能力减小"
+  ],
+  "image": "/slides/slide-038.png"
+ },
+ {
+  "page": 39,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "界限破坏 Balanced Failure",
+  "bullets": [
+   "界限破坏 Balanced Failure",
+   "如果 > b ，则在钢筋没",
+   "界限弯矩 Mb Balanced moment",
+   "界限配筋率 b Balanced Reinforcement Ratio",
+   "M",
+   "My",
+   "会压坏，表现为没有明显预兆",
+   "的混凝土受压脆性破坏的特征。",
+   "My= Mu",
+   "My",
+   "有达到屈服前，压区混凝土就",
+   "这种梁称为“超筋梁”。"
+  ],
+  "image": "/slides/slide-039.png"
+ },
+ {
+  "page": 40,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "超筋梁",
+  "bullets": [
+   "超筋梁"
+  ],
+  "image": "/slides/slide-040.png"
+ },
+ {
+  "page": 41,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "另一方面",
+  "bullets": [
+   "另一方面",
+   "◆ 由于梁在开裂时受拉区混凝土的拉力释放，使钢筋应力有一突然增量 s 。",
+   "◆ 与轴心受拉构件类似， s 随配筋率的减小而增大。",
+   "◆ 当配筋率小于一定值时，钢筋就会在梁开裂瞬间达到屈服强度， 即“Ⅰ a 状态”与",
+   "“Ⅱ a 状态”重合，无第Ⅱ阶段受力过程。",
+   "◆ 此时的配筋率称为最小配筋率 min",
+   "Minimum reinforcement ratio",
+   "◆ 这种破坏取决于混凝土的抗拉强度，混凝土的受压强度未得到充分发挥，极限弯",
+   "矩很小。",
+   "◆ 当 <min ，钢筋有可能在梁一开裂时就进入强化，甚至拉断， 梁的破坏与素",
+   "混凝土梁类似，属于受拉脆性破坏特征。"
+  ],
+  "image": "/slides/slide-041.png"
+ },
+ {
+  "page": 42,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "H（mm）",
+  "bullets": [
+   "H（mm）",
+   "200-9",
+   "180",
+   "150",
+   "140",
+   "120",
+   "00",
+   "30",
+   "∞ ∞9 9999°",
+   "test B-3",
+   "cbcoctobbtc",
+   "|1000pe"
+  ],
+  "image": "/slides/slide-042.png"
+ },
+ {
+  "page": 43,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "Load（kN）",
+  "bullets": [
+   "Load（kN）",
+   "140",
+   "120",
+   "100",
+   "80",
+   "8-3",
+   "B-2",
+   "B-1",
+   "5U",
+   "B-4",
+   "—B-1",
+   "B-2"
+  ],
+  "image": "/slides/slide-043.png"
+ },
+ {
+  "page": 44,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "M",
+  "bullets": [
+   "M",
+   "My= Mu",
+   "My",
+   "My",
+   "0",
+   "Mu",
+   "Mu",
+   ""
+  ],
+  "image": "/slides/slide-044.png"
+ },
+ {
+  "page": 45,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "受意均供适筋梁破坏时，受拉钢筋应变和压区边缘 应变（）。",
+  "bullets": [
+   "受意均供适筋梁破坏时，受拉钢筋应变和压区边缘 应变（）。",
+   "A.822g",
+   "C.aSe；",
+   "B.然",
+   "D.就",
+   "Ea:Eea",
+   "钢筋混凝土梁的意换区边缘达到（）时，拉区开出现裂缝。",
+   "A. 实际的抗拉强度",
+   "B•的抗拉强度标准值",
+   "C.的抗拉强度设计值",
+   "D. 砼弯曲时的极限拉应变",
+   "•超筋梁破坏时，受拉钢筋应变E，和压区边缘砼应变：（）。"
+  ],
+  "image": "/slides/slide-045.png"
+ },
+ {
+  "page": 46,
+  "section": "K3 正截面试验研究与破坏形态",
+  "title": "关于试验实验的要求：",
+  "bullets": [
+   "关于试验实验的要求：",
+   "1 、分为三种梁的试验 - 少筋梁、超筋梁、适筋梁；",
+   "2 、认真观察实验现象，作好记录；",
+   "3 、注意安全，听从指挥；",
+   "4 、独立完成实验报告"
+  ],
+  "image": "/slides/slide-046.png"
+ },
+ {
+  "page": 47,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "6.2.3 正截面受力分析",
+  "bullets": [
+   "6.2.3 正截面受力分析",
+   "一、基本假定 Basic Assumptions",
+   "(1) 截面应变保持平面；",
+   "(2) 不考虑混凝土的抗拉强度；",
+   "(3) 混凝土的受压应力 - 应变关系；",
+   "(4) 钢筋的应力 - 应变关系，受拉钢筋的极限拉应变取 0.01 。",
+   "根据以上四个基本假定，从理论上来说钢筋混凝土构件的正截面承载力",
+   "（单向和双向受弯、受压弯、受拉弯）的计算已不存在问题",
+   "但由于混凝土应力 - 应变关系的复杂性，在实用上还很不方便。"
+  ],
+  "image": "/slides/slide-047.png"
+ },
+ {
+  "page": 48,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+  "bullets": [
+   "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+   "fc",
+   "fc",
+   "C",
+   "M",
+   "xn",
+   "M",
+   "yc",
+   "x=xn",
+   "C",
+   "yc",
+   "z"
+  ],
+  "image": "/slides/slide-048.png"
+ },
+ {
+  "page": 49,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+  "bullets": [
+   "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+   "fc",
+   "fc",
+   "C",
+   "M",
+   "xn",
+   "M",
+   "yc",
+   "x=xn",
+   "C",
+   "yc",
+   "z"
+  ],
+  "image": "/slides/slide-049.png"
+ },
+ {
+  "page": 50,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+  "bullets": [
+   "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+   "fc",
+   "fc",
+   "C",
+   "M",
+   "xn",
+   "M",
+   "yc",
+   "x=xn",
+   "C",
+   "yc",
+   "z"
+  ],
+  "image": "/slides/slide-050.png"
+ },
+ {
+  "page": 51,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+  "bullets": [
+   "二、等效矩形应力图 Equivalent Rectangular Stress Block",
+   "fc",
+   "fc",
+   "C",
+   "M",
+   "xn",
+   "M",
+   "yc",
+   "C",
+   "x=xn",
+   "yc",
+   "z"
+  ],
+  "image": "/slides/slide-051.png"
+ },
+ {
+  "page": 52,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "表 6-3 混 凝 土 受 压 区 等 效 矩 形 应 力 图 系 数",
+  "bullets": [
+   "表 6-3 混 凝 土 受 压 区 等 效 矩 形 应 力 图 系 数",
+   "",
+   "",
+   "C55",
+   "0.99",
+   "0.79",
+   "≤ C50",
+   "1.0",
+   "0.8",
+   "C60",
+   "0.98",
+   "0.78"
+  ],
+  "image": "/slides/slide-052.png"
+ },
+ {
+  "page": 53,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "fc",
+  "bullets": [
+   "fc",
+   "M",
+   "x=xn",
+   "C=fcbx",
+   "基本方程",
+   " N 0,",
+   " M 0,",
+   "Ts=sAs",
+   "x",
+   "",
+   "h0",
+   " N 0,"
+  ],
+  "image": "/slides/slide-053.png"
+ },
+ {
+  "page": 54,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": " N 0,",
+  "bullets": [
+   " N 0,",
+   " M 0,",
+   "1 f cb  h0  f y As",
+   "M u 1 f cbh02 (1  0.5 )= s1 f cbh02",
+   "M u  f y bh02 (1  0.5 )= f y bh02s =f y Ass h0",
+   " s =（ 1-0.5）",
+   "s =1-0.5",
+   "截面抵抗矩系数",
+   "内力臂系数",
+   "教材有错"
+  ],
+  "image": "/slides/slide-054.png"
+ },
+ {
+  "page": 55,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "x",
+  "bullets": [
+   "x",
+   "",
+   "h0",
+   " N 0,",
+   " M 0,",
+   "fy",
+   "相对受压区高度",
+   "1 f cb  h0  f y As",
+   "M u 1 f c bh02 (1  0.5 )",
+   "fy",
+   "As",
+   ""
+  ],
+  "image": "/slides/slide-055.png"
+ },
+ {
+  "page": 56,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "三、适筋截面的限制条件",
+  "bullets": [
+   "三、适筋截面的限制条件"
+  ],
+  "image": "/slides/slide-056.png"
+ },
+ {
+  "page": 57,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "cu",
+  "bullets": [
+   "cu",
+   "xba ",
+   "xnb",
+   " cu",
+   " cu   y",
+   "h0",
+   "h0",
+   "1 cu",
+   "1 xba",
+   "xb",
+   "",
+   "b  "
+  ],
+  "image": "/slides/slide-057.png"
+ },
+ {
+  "page": 58,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "相 对 界 限 受 压 区 高 度 b 和 s,max",
+  "bullets": [
+   "相 对 界 限 受 压 区 高 度 b 和 s,max",
+   "混 凝 土 强 度 等 级",
+   "≤ C50",
+   "C60",
+   "C70",
+   "C80",
+   "b",
+   "0.550",
+   "0.531",
+   "0.512",
+   "0.493",
+   "s,max"
+  ],
+  "image": "/slides/slide-058.png"
+ },
+ {
+  "page": 59,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "对应于条件屈服点",
+  "bullets": [
+   "对应于条件屈服点",
+   "时的钢筋应变为：",
+   "• 根据截面平面变形等假设，可以求得无明显屈服点钢筋受弯构件相对界限受压区高度的计算公式为："
+  ],
+  "image": "/slides/slide-059.png"
+ },
+ {
+  "page": 60,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "达到界限破坏时的受弯承载力为适筋梁 Mu 的上限",
+  "bullets": [
+   "达到界限破坏时的受弯承载力为适筋梁 Mu 的上限",
+   "2",
+   "0",
+   "2",
+   "0 b",
+   "M max 1 f c bh  (1  0.5b )  s ,max 1 f c bh",
+   " s ,max  b (1  0.5 b )",
+   " b   max  b",
+   "f c",
+   "fy",
+   "★适筋梁的判别条件",
+   "   max"
+  ],
+  "image": "/slides/slide-060.png"
+ },
+ {
+  "page": 61,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "四、最小配筋率",
+  "bullets": [
+   "四、最小配筋率",
+   "c",
+   "c =Ecc",
+   "h/3",
+   "h/4",
+   "tu",
+   "ft",
+   "fc",
+   "M",
+   "x=xn",
+   "Mcr=Mu",
+   "C=fcbx"
+  ],
+  "image": "/slides/slide-061.png"
+ },
+ {
+  "page": 62,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "As",
+  "bullets": [
+   "As",
+   "f tk",
+   " min  0.36",
+   "bh",
+   "f yk",
+   "ftk /fyk=1.4ft/1.1fy=1.273ft/fy",
+   "As",
+   "ft",
+   " min  0.45",
+   "bh",
+   "fy",
+   "◆ 同时不应小于 0.2%"
+  ],
+  "image": "/slides/slide-062.png"
+ },
+ {
+  "page": 63,
+  "section": "K4 正截面受力分析与基本规定",
+  "title": "总结：",
+  "bullets": [
+   "总结：",
+   "1 、介绍了受弯构件的三种破坏形态；",
+   "2 、介绍了实验的过程；",
+   "3 、介绍了受弯构件的承载力计算方法。"
+  ],
+  "image": "/slides/slide-063.png"
+ },
+ {
+  "page": 64,
+  "section": "K5 单筋矩形截面计算",
+  "title": "6.2.4 受弯构件正截面承载力计算",
+  "bullets": [
+   "受弯构件",
+   "6.2.4 受弯构件正截面承载力计算",
+   "单筋矩形截面 Singly Reinforced Section",
+   "干货专用章",
+   "fc",
+   "M",
+   "x=xn",
+   "C=fcbx",
+   "◆基本公式 Basic Formulae",
+   "1 f c bx  f y As",
+   "x",
+   "x"
+  ],
+  "image": "/slides/slide-064.png"
+ },
+ {
+  "page": 65,
+  "section": "K5 单筋矩形截面计算",
+  "title": "◆公式适用条件 (Condition of Use)",
+  "bullets": [
+   "受弯构件",
+   "干货专用章",
+   "◆公式适用条件 (Condition of Use)",
+   "防止超筋脆性破坏 (Brittle Failure)",
+   "x b h0 或",
+   " b",
+   "注意此处： bh0",
+   "As",
+   "1 f c",
+   "",
+   " max b",
+   "bh0"
+  ],
+  "image": "/slides/slide-065.png"
+ },
+ {
+  "page": 66,
+  "section": "K5 单筋矩形截面计算",
+  "title": "ξ",
+  "bullets": [
+   "ξ",
+   "γ",
+   "α",
+   "0.01",
+   "0.995",
+   "0.00995",
+   "0.02",
+   "0.99",
+   "0.0198",
+   "0.03",
+   "0.985",
+   "0.02955"
+  ],
+  "image": "/slides/slide-066.png"
+ },
+ {
+  "page": 67,
+  "section": "K5 单筋矩形截面计算",
+  "title": "单筋矩形截面梁的计算方法",
+  "bullets": [
+   "单筋矩形截面梁的计算方法",
+   "• 截面设计",
+   "• 截面复核"
+  ],
+  "image": "/slides/slide-067.png"
+ },
+ {
+  "page": 68,
+  "section": "K5 单筋矩形截面计算",
+  "title": "★截面复核 (Validation of Cross-section)",
+  "bullets": [
+   "受弯构件",
+   "★截面复核 (Validation of Cross-section)",
+   "已知：截面尺寸 b ， h(h0) 、截面配筋 As ，以及材料强度 fy 、 fc",
+   "求：截面的受弯承载力 Mu>M",
+   "未知数：受压区高度 x 和受弯承载力 Mu",
+   "基本公式：",
+   "1 f c bx  f y As",
+   "x",
+   "x",
+   "M u 1 f c bx(h0  )  f y As (h0  )",
+   "2",
+   "2"
+  ],
+  "image": "/slides/slide-068.png"
+ },
+ {
+  "page": 69,
+  "section": "K5 单筋矩形截面计算",
+  "title": "★截面设计 (Design of Cross-section)",
+  "bullets": [
+   "受弯构件",
+   "★截面设计 (Design of Cross-section)",
+   "已知：弯矩设计值 M",
+   "求：截面尺寸 b ， h(h0) 、截面配筋 As ，以及材料强度 fy 、 fc",
+   "未知数：受压区高度 x 、 b ， h(h0) 、 As 、 fy 、 fc",
+   "基本公式：两个",
+   "没有唯一解",
+   "设计人员应根据受力性能、材料供应、施工条件、使用要求等因素综合",
+   "分析，确定较为经济合理的设计。",
+   "正截面受弯承载力计算"
+  ],
+  "image": "/slides/slide-069.png"
+ },
+ {
+  "page": 70,
+  "section": "K5 单筋矩形截面计算",
+  "title": "◆材料选用：",
+  "bullets": [
+   "受弯构件",
+   "◆材料选用：",
+   "● 适筋梁的 Mu 主要取决于 fyAs ，",
+   "因此 RC 受弯构件的 fc 不宜较高。",
+   "现浇梁板：常用 C15~C25 级混凝土",
+   "预制梁板：常用 C20~C30 级混凝土",
+   "● 另一方面， RC 受弯构件是带裂缝工作的，由于裂缝宽度和挠度变形的",
+   "限制，高强钢筋的强度也不能得到充分利用。",
+   "梁常用Ⅱ ~Ⅲ 级钢筋，板常用Ⅰ ~Ⅲ 级钢筋。",
+   "正截面受弯承载力计算"
+  ],
+  "image": "/slides/slide-070.png"
+ },
+ {
+  "page": 71,
+  "section": "K5 单筋矩形截面计算",
+  "title": "◆截面尺寸确定",
+  "bullets": [
+   "受弯构件",
+   "◆截面尺寸确定",
+   "● 截面应具有一定刚度，满足正常使用阶段的验算能满足挠度变形的",
+   "要求。",
+   "● 根据工程经验，一般常按高跨比 h/L 来估计截面高度",
+   "● 简支梁可取 h=(1/10 ~ 1/16)L ， b=(1/2~1/3)h 估计",
+   "● 简支板可取 h = (1/30 ~ 1/35)L",
+   "● 但截面尺寸的选择范围仍较大，为此需从经济角度进一步分析。",
+   "正截面受弯承载力计算"
+  ],
+  "image": "/slides/slide-071.png"
+ },
+ {
+  "page": 72,
+  "section": "K5 单筋矩形截面计算",
+  "title": "给定 M 时",
+  "bullets": [
+   "受弯构件",
+   "给定 M 时",
+   "● 截面尺寸 b 、 h(h0) 越大，所需的 As 就越少，越小，但混凝",
+   "土用量和模板费用增加，并影响使用净空高度；",
+   "● 反之， b 、 h(h0) 越小，所需的 As 就越大，增大。",
+   "造 价",
+   "总 造 价",
+   "钢",
+   "混 凝 土",
+   "",
+   "经 济 配 筋 率",
+   "正截面受弯承载力计算"
+  ],
+  "image": "/slides/slide-072.png"
+ },
+ {
+  "page": 73,
+  "section": "K5 单筋矩形截面计算",
+  "title": "经济配筋率",
+  "bullets": [
+   "受弯构件",
+   "经济配筋率",
+   "(Economic",
+   "Reinforcement Ratio)",
+   "造 价",
+   "总 造 价",
+   "钢",
+   "混 凝 土",
+   "经 济 配 筋 率",
+   "梁： =",
+   "（ 0.5~1.6 ） %",
+   "板： ="
+  ],
+  "image": "/slides/slide-073.png"
+ },
+ {
+  "page": 74,
+  "section": "K5 单筋矩形截面计算",
+  "title": "选定材料强度 fy 、 fc ，截面尺寸 b 、 h(h0) 后，",
+  "bullets": [
+   "受弯构件",
+   "选定材料强度 fy 、 fc ，截面尺寸 b 、 h(h0) 后，",
+   "未知数就只有 x ， As ，基本公式可解",
+   "问题？",
+   "M 1 f c bh02  (1  0.5 )  s 1 f c bh02",
+   "M",
+   "s ",
+   " s ,max",
+   "2",
+   "1 f c bh0",
+   "？",
+   "增加截面尺寸"
+  ],
+  "image": "/slides/slide-074.png"
+ },
+ {
+  "page": 75,
+  "section": "K5 单筋矩形截面计算",
+  "title": "提高钢筋砼受弯构件抗弯刚度（减小挠度）最有效的措施是（ ）。",
+  "bullets": [
+   "提高钢筋砼受弯构件抗弯刚度（减小挠度）最有效的措施是（ ）。",
+   "A ．提高砼强度等级",
+   "B ．增加受拉钢筋的截面面积",
+   "C ．加大截面的有效高度",
+   "D ．加大截面宽度",
+   "当构件或结构 ( ) 时，就认为其超过了承载能力的极限状态。",
+   "A ．倾覆、过大的滑移",
+   "B ．挠度超过允许限值",
+   "C ．裂度宽度超过允许限值",
+   "D ．出现一条细微裂缝"
+  ],
+  "image": "/slides/slide-075.png"
+ },
+ {
+  "page": 76,
+  "section": "K6 双筋矩形截面梁",
+  "title": "6.2.5 双筋矩形截面梁",
+  "bullets": [
+   "受弯构件",
+   "6.2.5 双筋矩形截面梁",
+   "(Ultimate Bearing Capacity Calculation for Doubly",
+   "Reinforced Rectangular Section of Flexural Members)",
+   "双筋矩形截面 Doubly Reinforced Section",
+   "双筋截面是指同时配置受拉",
+   "和受压钢筋的情况。",
+   "受 压 钢 筋",
+   "A s'",
+   "As",
+   "正截面受弯承载力计算"
+  ],
+  "image": "/slides/slide-076.png"
+ },
+ {
+  "page": 77,
+  "section": "K6 双筋矩形截面梁",
+  "title": "一般来说采用双筋是不经济的，工程中通常仅在以下情况下采",
+  "bullets": [
+   "受弯构件",
+   "一般来说采用双筋是不经济的，工程中通常仅在以下情况下采",
+   "不得不",
+   "用：",
+   "◆ 当截面尺寸和材料强度受建筑使用和施工条件（或整个工程）限制",
+   "而不能增加，而计算又不满足适筋截面条件时，可采用双筋截面，",
+   "即在受压区配置钢筋以补充混凝土受压能力的不足。",
+   "充分利用现有",
+   "◆ 另一方面，由于荷载有多种组合情况，在某一组合情况下截面承受",
+   "正弯矩，另一种组合情况下承受负弯矩，这时也出现双筋截面。",
+   "◆ 此外，由于受压钢筋可以提高截面的延性，因此，在抗震结构中要",
+   "求框架梁必须配置一定比例的受压钢筋。"
+  ],
+  "image": "/slides/slide-077.png"
+ },
+ {
+  "page": 78,
+  "section": "K6 双筋矩形截面梁",
+  "title": "设计规范条文",
+  "bullets": [
+   "设计规范条文"
+  ],
+  "image": "/slides/slide-078.png"
+ },
+ {
+  "page": 79,
+  "section": "K6 双筋矩形截面梁",
+  "title": "◆ 受压钢筋强度的利用",
+  "bullets": [
+   "受弯构件",
+   "◆ 受压钢筋强度的利用",
+   "受 压 钢 筋",
+   "s≤ 15d， 400mm",
+   "A s'",
+   "≥",
+   "As",
+   "封 闭 箍 筋",
+   "1d",
+   "4",
+   "d",
+   "配置受压钢筋后，为防止受压钢筋压曲而导致受压区混凝土保护层过早崩"
+  ],
+  "image": "/slides/slide-079.png"
+ },
+ {
+  "page": 80,
+  "section": "K6 双筋矩形截面梁",
+  "title": "cu",
+  "bullets": [
+   "受弯构件",
+   "cu",
+   "a’",
+   "As",
+   "’",
+   "Cs=s’As’",
+   " s",
+   "M",
+   "x",
+   "Cc=fcbx",
+   "h0",
+   "As"
+  ],
+  "image": "/slides/slide-080.png"
+ },
+ {
+  "page": 81,
+  "section": "K6 双筋矩形截面梁",
+  "title": "cu",
+  "bullets": [
+   "受弯构件",
+   "cu",
+   "a’",
+   "As",
+   "’",
+   "Cs=s’As’",
+   " s",
+   "M",
+   "x",
+   "Cc=fcbx",
+   "h0",
+   "As"
+  ],
+  "image": "/slides/slide-081.png"
+ },
+ {
+  "page": 82,
+  "section": "K6 双筋矩形截面梁",
+  "title": "cu",
+  "bullets": [
+   "受弯构件",
+   "cu",
+   "a’",
+   "As",
+   "’",
+   "Cs=s’As’",
+   " s",
+   "M",
+   "x",
+   "Cc=fcbx",
+   "h0",
+   "As"
+  ],
+  "image": "/slides/slide-082.png"
+ },
+ {
+  "page": 83,
+  "section": "K6 双筋矩形截面梁",
+  "title": "◆基本公式",
+  "bullets": [
+   "受弯构件",
+   "◆基本公式",
+   "1 f c bx  f yAs  f y As",
+   "x",
+   "M M u 1 f c bx(h0  )  f yAs(h0  as)",
+   "2",
+   "cu",
+   "a’",
+   "As",
+   "’",
+   "Cs=fsy’A",
+   "'A's’s"
+  ],
+  "image": "/slides/slide-083.png"
+ },
+ {
+  "page": 84,
+  "section": "K6 双筋矩形截面梁",
+  "title": "◆基本公式",
+  "bullets": [
+   "受弯构件",
+   "◆基本公式",
+   "1 f c bx  f yAs  f y As",
+   "x",
+   "M M u 1 f c bx(h0  )  f yAs(h0  as)",
+   "2",
+   "1 f c bx  f y As 2",
+   " f yAs  f y As1",
+   "",
+   "",
+   "x   M  f A(h  a)",
+   " u1"
+  ],
+  "image": "/slides/slide-084.png"
+ },
+ {
+  "page": 85,
+  "section": "K6 双筋矩形截面梁",
+  "title": "As",
+  "bullets": [
+   "受弯构件",
+   "As",
+   "As",
+   "As",
+   "As1",
+   "As2",
+   "fy'As'",
+   "M",
+   "fcbx",
+   "fyAs",
+   "fy'As'",
+   "M1"
+  ],
+  "image": "/slides/slide-085.png"
+ },
+ {
+  "page": 86,
+  "section": "K6 双筋矩形截面梁",
+  "title": "As",
+  "bullets": [
+   "受弯构件",
+   "As",
+   "As",
+   "As",
+   "As1",
+   "As2",
+   "fy'As'",
+   "M",
+   "fcbx",
+   "fyAs",
+   "fy'As'",
+   "M1"
+  ],
+  "image": "/slides/slide-086.png"
+ },
+ {
+  "page": 87,
+  "section": "K6 双筋矩形截面梁",
+  "title": "As",
+  "bullets": [
+   "受弯构件",
+   "As",
+   "As",
+   "As",
+   "As1",
+   "As2",
+   "fy'As'",
+   "fy'As'",
+   "M",
+   "fcbx",
+   "M u1",
+   "fcbx"
+  ],
+  "image": "/slides/slide-087.png"
+ },
+ {
+  "page": 88,
+  "section": "K6 双筋矩形截面梁",
+  "title": "◆基本公式",
+  "bullets": [
+   "受弯构件",
+   "干货专用章",
+   "◆基本公式",
+   "1 f c bx  f yAs  f y As",
+   "x",
+   "M M u 1 f c bx(h0  )  f yAs(h0  as)",
+   "2",
+   "1 f c bx  f y As 2",
+   " f yAs = f y As1",
+   "",
+   "",
+   "x   M = f A(h - a )"
+  ],
+  "image": "/slides/slide-088.png"
+ },
+ {
+  "page": 89,
+  "section": "K6 双筋矩形截面梁",
+  "title": "◆适用条件",
+  "bullets": [
+   "受弯构件",
+   "干货专用章",
+   "◆适用条件",
+   "● 防止超筋脆性破坏",
+   "x b h0 或",
+   " b",
+   "As 2",
+   " fc",
+   "",
+   " max b",
+   "bh0",
+   "fy"
+  ],
+  "image": "/slides/slide-089.png"
+ },
+ {
+  "page": 90,
+  "section": "K6 双筋矩形截面梁",
+  "title": "钢筋砼双筋矩形截面梁，正截面承载力计算公式的适用条件 X≥2a；的物理意义是（）。",
+  "bullets": [
+   "钢筋砼双筋矩形截面梁，正截面承载力计算公式的适用条件 X≥2a；的物理意义是（）。",
+   "A.防止出现超筋截面破坏形态",
+   "B. 防止出现少筋截面破坏形态",
+   "C.保证受压钢筋应力达到规定的抗压设计强度",
+   "D. 保证受拉钢筋应力达到规定的抗拉设计强度"
+  ],
+  "image": "/slides/slide-090.png"
+ },
+ {
+  "page": 91,
+  "section": "K6 双筋矩形截面梁",
+  "title": "★ 截面复核",
+  "bullets": [
+   "受弯构件",
+   "★ 截面复核",
+   "已知： b 、 h 、 as 、 as’ 、 As 、 As’ 、 fy 、 fy’ 、 fc",
+   "求： Mu≥M",
+   "未知数：受压区高度 x 和受弯承载力 Mu 两个未知数，有唯一解",
+   "问题：当 >b 时， Mu=?",
+   "2",
+   "0",
+   "M u 2  s ,max 1 f c bh",
+   "M u M u2  f yAs(h0  as)",
+   "当 x < 2as’ 时， Mu =?",
+   "可偏于安全的按下式计算"
+  ],
+  "image": "/slides/slide-091.png"
+ },
+ {
+  "page": 92,
+  "section": "K6 双筋矩形截面梁",
+  "title": "★截面设计",
+  "bullets": [
+   "受弯构件",
+   "★截面设计",
+   "已知：弯矩设计值 M ，截面 b 、 h 、 as 和 as’ ，材料强度 fy 、 fy ’ 、 fc",
+   "求：截面配筋",
+   "Y",
+   "M",
+   "s ",
+   "  s ,max",
+   "2",
+   "1 f c bh0",
+   "N",
+   "未知数： x 、 As 、 As’"
+  ],
+  "image": "/slides/slide-092.png"
+ },
+ {
+  "page": 93,
+  "section": "K6 双筋矩形截面梁",
+  "title": "已知： M ， b 、 h 、 as 、 as’ ， fy 、 fy ’ 、 fc 、",
+  "bullets": [
+   "受弯构件",
+   "已知： M ， b 、 h 、 as 、 as’ ， fy 、 fy ’ 、 fc 、",
+   "As’",
+   "求：",
+   "As x 、 As",
+   "未知数：",
+   "M 1  f yAs(h0  as)",
+   "M  M1",
+   " s1 ",
+   "  s ,max",
+   "2",
+   "1 f c bh0"
+  ],
+  "image": "/slides/slide-093.png"
+ },
+ {
+  "page": 94,
+  "section": "K6 双筋矩形截面梁",
+  "title": "•双筋矩形截面梁设计中如果满足",
+  "bullets": [
+   "•双筋矩形截面梁设计中如果满足",
+   "时，表明： （ ）",
+   "A ．拉筋不屈服，压筋屈服；",
+   "屈服；",
+   "C ．拉压筋均不屈服；",
+   "。",
+   "2as  x  xb",
+   "B ．拉筋屈服，压筋不",
+   "D ．拉压钢筋均屈服"
+  ],
+  "image": "/slides/slide-094.png"
+ },
+ {
+  "page": 95,
+  "section": "K7 T形截面梁",
+  "title": "bf’",
+  "bullets": [
+   "受弯构件",
+   "bf’",
+   "6.2.6 T 型截面梁",
+   "hf’",
+   "h",
+   "h0",
+   "b",
+   "hf",
+   "◆ 挖去受拉区混凝土，形成 T 形截面，对受",
+   "弯承载力没有影响。",
+   "bf",
+   "◆ 节省混凝土，减轻自重。"
+  ],
+  "image": "/slides/slide-095.png"
+ },
+ {
+  "page": 96,
+  "section": "K7 T形截面梁",
+  "title": "◆ 受压翼缘 (compression flange ) 越大，",
+  "bullets": [
+   "受弯构件",
+   "◆ 受压翼缘 (compression flange ) 越大，",
+   "对截面受弯越有利 (x 减小，内力臂增大）",
+   "◆ 但试验和理论分析均表明，整个受压翼缘混凝土",
+   "的压应力增长并不是同步的。",
+   "◆ 翼缘处的压应力与腹板处受压区压应力相比，",
+   "存在滞后现象 (Hysterisis) ，",
+   "◆ 随距腹板 (stem) 距离越远，滞后程度越",
+   "大，受压翼缘压应力的分布是不均匀的。",
+   "正截面受弯承载力计算"
+  ],
+  "image": "/slides/slide-096.png"
+ },
+ {
+  "page": 97,
+  "section": "K7 T形截面梁",
+  "title": "◆ 计算上为简化采有效翼缘宽度 bf’ Effective flange width",
+  "bullets": [
+   "受弯构件",
+   "◆ 计算上为简化采有效翼缘宽度 bf’ Effective flange width",
+   "◆ 认为在 bf’ 范围内压应力为均匀分布， bf’ 范围以外部分的翼缘则不考虑。",
+   "◆ 有效翼缘宽度也称为翼缘计算宽度",
+   "◆ 它与翼缘厚度 h'f 、梁的宽度 l0 、受力情况 ( 单独梁、整浇肋形楼盖梁 ) 等因",
+   "素有关。",
+   "正截面受弯承载力计算"
+  ],
+  "image": "/slides/slide-097.png"
+ },
+ {
+  "page": 98,
+  "section": "K7 T形截面梁",
+  "title": "翼缘计算宽度",
+  "bullets": [
+   "受弯构件",
+   "翼缘计算宽度",
+   "考 虑 情 况",
+   "b f",
+   "T形截面",
+   "倒 L形截面",
+   "肋形梁（板）",
+   "独立梁",
+   "肋形梁（板）",
+   "按 计 算 跨 度 l0 考 虑",
+   "1",
+   "l0"
+  ],
+  "image": "/slides/slide-098.png"
+ },
+ {
+  "page": 99,
+  "section": "K7 T形截面梁",
+  "title": "T 型截面梁分类",
+  "bullets": [
+   "受弯构件",
+   "T 型截面梁分类",
+   "第一类 T 形截面",
+   "x  hf",
+   "界限情况",
+   "第二类 T 形截面",
+   "x  hf",
+   "x hf",
+   "1 f c bf hf  f y As 1 f cbf hf  f y As",
+   "M  M f",
+   "M f 1 f c bf hf (h0 ",
+   "1 f c bf hf  f y As"
+  ],
+  "image": "/slides/slide-099.png"
+ },
+ {
+  "page": 100,
+  "section": "K7 T形截面梁",
+  "title": "第一类 T 形截面",
+  "bullets": [
+   "受弯构件",
+   "第一类 T 形截面",
+   "干货专用章",
+   "计算公式与宽度等于 bf’ 的矩形截面相同",
+   "f c bf x  f y As",
+   "M  f c bf x(h0 ",
+   "x",
+   ")",
+   "2",
+   "◆对工形和倒 T 形截面，则受拉钢",
+   "筋应满足",
+   "As≥min[bh + (bf - b)hf]"
+  ],
+  "image": "/slides/slide-100.png"
+ },
+ {
+  "page": 101,
+  "section": "K7 T形截面梁",
+  "title": "第二类 T 形截面",
+  "bullets": [
+   "受弯构件",
+   "干货专用章",
+   "第二类 T 形截面",
+   "=",
+   "+",
+   "1 f c bx  1 f c (bf  b)hf  f y As",
+   "hf",
+   "x",
+   ")",
+   "M u 1 f c bx(h0  )  1 f c (bf  b)hf (h0 ",
+   "2",
+   "2"
+  ],
+  "image": "/slides/slide-101.png"
+ },
+ {
+  "page": 102,
+  "section": "K7 T形截面梁",
+  "title": "第二类 T 形截面",
+  "bullets": [
+   "受弯构件",
+   "干货专用章",
+   "第二类 T 形截面",
+   "=",
+   "+",
+   "为防止超筋脆性破坏，腹板部分应满足：",
+   "x b h0 或",
+   " b",
+   "As 2",
+   "1 f c",
+   "",
+   " max b"
+  ],
+  "image": "/slides/slide-102.png"
+ },
+ {
+  "page": 103,
+  "section": "K7 T形截面梁",
+  "title": "为防止少筋脆性破坏，截面总配筋面积应满足：",
+  "bullets": [
+   "受弯构件",
+   "为防止少筋脆性破坏，截面总配筋面积应满足：",
+   "As≥minbh 。",
+   "对于第二类 T 形截面，该条件一般能满足。",
+   "第二类 T 形截面的设计计算方法也与双筋截面类似",
+   "1 f c (bf  b)hf",
+   "As1 ",
+   "fy",
+   "M u1 1 f c (bf  b)hf (h0 ",
+   "hf",
+   "2",
+   "M  M u1"
+  ],
+  "image": "/slides/slide-103.png"
+ },
+ {
+  "page": 104,
+  "section": "K7 T形截面梁",
+  "title": " 基本计算公式",
+  "bullets": [
+   "受弯构件",
+   " 基本计算公式",
+   "设计截面",
+   "复核截面",
+   "首先对 T 形截面进行判别",
+   "设计",
+   "M u1",
+   "M  1 f c b f h f (h0  h f / 2)",
+   "是",
+   "否",
+   "第一类",
+   "第二类"
+  ],
+  "image": "/slides/slide-104.png"
+ },
+ {
+  "page": 105,
+  "section": "K7 T形截面梁",
+  "title": "某T形染戴面尺寸如图1所示，当按最小配筋率 Pain =0.2%置原纵向受力钢筋4时，设",
+  "bullets": [
+   "某T形染戴面尺寸如图1所示，当按最小配筋率 Pain =0.2%置原纵向受力钢筋4时，设",
+   "截面有效高度 h。=465nm，则么为：",
+   "（",
+   "）",
+   "-800",
+   "3W",
+   "+",
+   "十2004",
+   "A. A， =800x500 x0.2%=800mm’，",
+   "B. A， =800x465 x 0.2%=744mm^；",
+   "c. A，=200x500 x0.2%=200mm’；",
+   "D. A， =［200×500+（800-200）×100］×0.2% =320mm~"
+  ],
+  "image": "/slides/slide-105.png"
+ },
+ {
+  "page": 106,
+  "section": "K7 T形截面梁",
+  "title": "适量配筋的钢筋混凝土梁与素混凝土梁相比，其承载力和抵抗开裂的能力",
+  "bullets": [
+   "•",
+   "适量配筋的钢筋混凝土梁与素混凝土梁相比，其承载力和抵抗开裂的能力",
+   "（ ）",
+   "A ．均提高很多；",
+   "B ．承载力提高不多，抗裂提高很多；",
+   "C ．承载力提高很多，抗裂提高不多；",
+   "D ．相同。"
+  ],
+  "image": "/slides/slide-106.png"
+ },
+ {
+  "page": 107,
+  "section": "K8 斜截面受剪·破坏形态",
+  "title": "6.3 斜截面受剪承载力",
+  "bullets": [
+   "6.3 斜截面受剪承载力",
+   " 梁：剪力和弯矩共同作用",
+   " 可能沿斜裂缝发生剪切破坏",
+   " 延性小，具有明显的脆性破坏特性，所以应进行斜截面承载力验算",
+   "弯剪段（本节研究的主要内容）",
+   "P",
+   "P",
+   "h",
+   "s",
+   "b",
+   "Asv1",
+   "纵筋"
+  ],
+  "image": "/slides/slide-107.png"
+ },
+ {
+  "page": 108,
+  "section": "K8 斜截面受剪·破坏形态",
+  "title": "斜截面的破坏形态：",
+  "bullets": [
+   "•",
+   "斜截面的破坏形态：",
+   "– 斜弯破坏",
+   "– 剪切破坏",
+   "1. 剪压破坏",
+   "2. 斜拉破坏",
+   "3. 斜压破坏",
+   " 与配箍量和剪跨比有关"
+  ],
+  "image": "/slides/slide-108.png"
+ },
+ {
+  "page": 109,
+  "section": "K8 斜截面受剪·破坏形态",
+  "title": "第 109 页",
+  "bullets": [],
+  "image": "/slides/slide-109.png"
+ },
+ {
+  "page": 110,
+  "section": "K8 斜截面受剪·破坏形态",
+  "title": "剪压破坏－脆性破坏",
+  "bullets": [
+   "剪压破坏－脆性破坏",
+   "1. 剪跨比适中 ( 无腹筋梁）",
+   "1  3",
+   "1. 在剪跨区内形成临界斜裂缝",
+   "2. 与斜裂缝相交的箍筋达到屈服。",
+   "3. 剪压区的混凝土在复合作用",
+   "下，达到极限强度而破坏",
+   "2. 腹筋配置量适中",
+   "形成条件",
+   "破坏现象"
+  ],
+  "image": "/slides/slide-110.png"
+ },
+ {
+  "page": 111,
+  "section": "K8 斜截面受剪·破坏形态",
+  "title": "斜压破坏－明显脆性破坏",
+  "bullets": [
+   "斜压破坏－明显脆性破坏",
+   "1. 剪跨比较小 ( 无腹筋梁）",
+   " 1",
+   "1. 腹部将发生若干根相互平行",
+   "的斜裂缝 ( 亦称腹剪裂缝 ) ，",
+   "形成若干斜向短柱，",
+   "2. 短柱压坏",
+   "3. 与斜裂缝相交的箍筋不屈服。",
+   "2. 箍筋配置过多",
+   "3. T 形或工形截面梁腹板较薄",
+   "时",
+   "形成条件"
+  ],
+  "image": "/slides/slide-111.png"
+ },
+ {
+  "page": 112,
+  "section": "K8 斜截面受剪·破坏形态",
+  "title": "斜拉破坏－明显脆性破坏",
+  "bullets": [
+   "斜拉破坏－明显脆性破坏",
+   "1. 剪跨比较大 ( 无腹筋梁）",
+   ">3",
+   "1. 出现垂直向弯曲裂缝；",
+   "2. 迅速向受压区斜向伸展并分成",
+   "两部分，梁受拉破坏",
+   "3. 破坏荷载与开裂荷载接近，类",
+   "似于正截面少筋梁",
+   "2. 箍筋配置过少",
+   "形成条件",
+   "破坏现象"
+  ],
+  "image": "/slides/slide-112.png"
+ },
+ {
+  "page": 113,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "6.3.1 无腹筋梁的抗剪性能",
+  "bullets": [
+   "6.3.1 无腹筋梁的抗剪性能",
+   "• 斜裂缝出现前构件的受力状态"
+  ],
+  "image": "/slides/slide-113.png"
+ },
+ {
+  "page": 114,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "剪弯区段内任一点的主拉应力和主压应力",
+  "bullets": [
+   "剪弯区段内任一点的主拉应力和主压应力",
+   " tp ",
+   "",
+   "2",
+   "",
+   "2",
+   "4",
+   "",
+   "2",
+   "主应力与梁纵轴的夹角",
+   "",
+   "2"
+  ],
+  "image": "/slides/slide-114.png"
+ },
+ {
+  "page": 115,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "• 主拉应力迹线和主压",
+  "bullets": [
+   "• 主拉应力迹线和主压",
+   "应力迹线",
+   "• 纯弯段、剪弯段的裂",
+   "缝走向",
+   "•",
+   "弯剪斜裂缝（一般梁）",
+   "和腹剪斜裂缝（薄腹梁）"
+  ],
+  "image": "/slides/slide-115.png"
+ },
+ {
+  "page": 116,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "斜裂缝出现后构件的受力状态",
+  "bullets": [
+   "•",
+   "斜裂缝出现后构件的受力状态",
+   "–",
+   "–",
+   "截面上的应力不能用一般材料力学公式进行计算",
+   "斜裂缝出现前",
+   "斜裂缝出现后",
+   "1. 平截面假定",
+   "曲线分布",
+   "2. 荷载由全截面承受 由斜裂缝上方混凝土承受",
+   "– 斜裂缝下端钢筋应力增大",
+   "– 剪压区的剪应力和压应力突然增大"
+  ],
+  "image": "/slides/slide-116.png"
+ },
+ {
+  "page": 117,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "ME",
+  "bullets": [
+   "ME",
+   "Me",
+   "V",
+   "Tace",
+   "a",
+   "（a）",
+   "M囚",
+   "V凶",
+   "（b）"
+  ],
+  "image": "/slides/slide-117.png"
+ },
+ {
+  "page": 118,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "• 荷载产生的剪力 V",
+  "bullets": [
+   "– 隔离体受力",
+   "• 荷载产生的剪力 V",
+   "• 斜裂缝上端混凝土截面承受的剪力 Vc 及压力 Cc",
+   "• 纵向钢筋的拉力 Ts",
+   "• 纵向钢筋的销栓作用传递的剪力 Vd",
+   "• 斜裂缝交界面骨料的咬合与摩擦等作用传递的剪力 Va",
+   "• Vd 和 Va ：并入 Vc 中考虑"
+  ],
+  "image": "/slides/slide-118.png"
+ },
+ {
+  "page": 119,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "ΣX=0",
+  "bullets": [
+   "– 隔离体平衡",
+   "ΣX=0",
+   "Cc=Ts",
+   "ΣY=0",
+   "Vc=V",
+   "ΣM=0",
+   "Tsz=Va",
+   "– 剪跨",
+   "– 应力重分布",
+   "• 剪应力和压应力面积",
+   "• 弯矩考虑的截面"
+  ],
+  "image": "/slides/slide-119.png"
+ },
+ {
+  "page": 120,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "影响无腹筋梁斜截面受剪承载力的主要因素",
+  "bullets": [
+   "影响无腹筋梁斜截面受剪承载力的主要因素",
+   " 剪跨比",
+   " 混凝土强度",
+   " 纵筋配筋率",
+   " 荷载形式（集中荷载、分布荷载）",
+   " 加载方式（直接加载、间接加载）",
+   " 结构类型（简支梁、连续梁）",
+   " 截面形状"
+  ],
+  "image": "/slides/slide-120.png"
+ },
+ {
+  "page": 121,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "• 实质上反映了截面上弯矩 M 与剪力 V 的相对比值（截面上正应力和剪应力的",
+  "bullets": [
+   "– 剪跨比 λ",
+   "• 实质上反映了截面上弯矩 M 与剪力 V 的相对比值（截面上正应力和剪应力的",
+   "比值）",
+   "• 对于承受集中荷载的梁，剪跨比 λ 表达为",
+   "P",
+   "计算剪跨比",
+   "As",
+   "广义剪跨比",
+   "  a h Va Vh M Vh",
+   "0",
+   "P",
+   "0"
+  ],
+  "image": "/slides/slide-121.png"
+ },
+ {
+  "page": 122,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "斜压破坏",
+  "bullets": [
+   "– 剪跨比与破坏形态",
+   "斜压破坏",
+   " 1",
+   "1    3 剪压破坏",
+   "  3 斜拉破坏",
+   "λ>3 后剪跨比对受剪承载力的影响不明显，受剪承载力趋于稳定"
+  ],
+  "image": "/slides/slide-122.png"
+ },
+ {
+  "page": 123,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "条件相同的无腹筋梁，由于煎踪比不同发生剪压、斜压、斜拉破坏，梁的斜戴面抗煎承载，",
+  "bullets": [
+   "条件相同的无腹筋梁，由于煎踪比不同发生剪压、斜压、斜拉破坏，梁的斜戴面抗煎承载，",
+   "力的大致关系是（）。",
+   "A. 剪压>斜压>斜拉",
+   "C.煎压=斜压>斜拉",
+   "3. 斜压>剪压>斜拉",
+   "D. 斜压>煎压=斜拉"
+  ],
+  "image": "/slides/slide-123.png"
+ },
+ {
+  "page": 124,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "• 梁的剪切破坏是由于混凝土达到其极限强度而发生的",
+  "bullets": [
+   "– 混凝土强度",
+   "• 梁的剪切破坏是由于混凝土达到其极限强度而发生的",
+   "• 在其它条件相同时，梁的受剪承载力随混凝土强度的提高而提高，",
+   "两者为线性关系"
+  ],
+  "image": "/slides/slide-124.png"
+ },
+ {
+  "page": 125,
+  "section": "K9 无腹筋梁抗剪性能",
+  "title": "• 纵筋配筋率",
+  "bullets": [
+   "• 纵筋配筋率",
+   "– 可以抑制斜裂缝的开展和延伸",
+   "– 有助于保留较大的混凝土剪压区的面积",
+   "– 增加提高了销栓力",
+   "– 纵筋配筋率 ρ 对梁的受剪承载力的影响，两者大体上呈线性关系"
+  ],
+  "image": "/slides/slide-125.png"
+ },
+ {
+  "page": 126,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "6.3.2 有腹筋梁的受剪性能",
+  "bullets": [
+   "6.3.2 有腹筋梁的受剪性能",
+   "• 钢筋混凝土梁的设计：",
+   "强剪弱弯",
+   "– 不希望剪切破坏发生于受弯破坏之前",
+   "– 希望即使结构超载，也不能发生类似斜拉破坏、斜压破坏等",
+   "脆性特征",
+   "配置腹筋",
+   "？定量计算",
+   "• 梁的抗剪计算模型",
+   "– 无腹筋梁的拉杆拱受力模型",
+   "– 有腹筋梁的比拟桁架受力模型"
+  ],
+  "image": "/slides/slide-126.png"
+ },
+ {
+  "page": 127,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "•无腹筋梁的拉杆拱受力模型",
+  "bullets": [
+   "•无腹筋梁的拉杆拱受力模型",
+   "- 当“拱顶”混凝土强度不足时将发生斜拉或剪压破坏；",
+   "- 当“拱体”混凝土抗压强度不足时将发生斜压破坏；",
+   "- 当支座纵筋锚固不足时将发生粘结锚固破坏",
+   "（a）"
+  ],
+  "image": "/slides/slide-127.png"
+ },
+ {
+  "page": 128,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "• 有腹筋梁的比拟桁架",
+  "bullets": [
+   "• 有腹筋梁的比拟桁架",
+   "受力模型",
+   "- 开裂后的混凝土块体I",
+   "为桁架的上弦",
+   "- 斜裂缝之间的混凝土",
+   "小拱II、皿桁架斜",
+   "压杆",
+   "-纵筋为受拉弦杆",
+   "-箍筋为受拉腹杆",
+   "- 平面桁架模型并不能",
+   "确切地反映梁斜截面",
+   "的破坏机理"
+  ],
+  "image": "/slides/slide-128.png"
+ },
+ {
+  "page": 129,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "/1",
+  "bullets": [
+   "/1"
+  ],
+  "image": "/slides/slide-129.png"
+ },
+ {
+  "page": 130,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "斜裂缝出现后，腹筋的作用大大增加，有腹筋梁的受力性能与无腹",
+  "bullets": [
+   "– 腹筋的受力特性",
+   "斜裂缝出现后，腹筋的作用大大增加，有腹筋梁的受力性能与无腹",
+   "梁相比将有明显的差异",
+   "• 腹筋的作用",
+   "1. 直接承担部分剪力",
+   "2. 腹筋能限制斜裂缝的开展和延伸，增大斜裂缝上端混凝土剪压区截",
+   "面面积",
+   "3. 提高斜裂缝交界面骨料的咬合和摩擦作用，延缓沿纵筋的粘结劈裂",
+   "裂缝的发展，防止混凝土保护层的突然撕裂，提高纵向钢筋的销栓",
+   "作用",
+   "•"
+  ],
+  "image": "/slides/slide-130.png"
+ },
+ {
+  "page": 131,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "• 配箍率 ρsv 为箍筋截面面积与相应的混凝土面积的比值",
+  "bullets": [
+   "– 影响腹筋梁斜截面受剪承载力的主要因素",
+   "• 配箍率 ρsv 为箍筋截面面积与相应的混凝土面积的比值",
+   "nA sv1",
+   " sv ",
+   "bs"
+  ],
+  "image": "/slides/slide-131.png"
+ },
+ {
+  "page": 132,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "配箍率与破坏形态",
+  "bullets": [
+   "配箍率与破坏形态",
+   "• 当配箍率适当时，剪压破坏",
+   "• 当配箍率过低时，斜拉破坏",
+   "• 当配箍率过大时，斜压破坏"
+  ],
+  "image": "/slides/slide-132.png"
+ },
+ {
+  "page": 133,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "•梁有斜压、剪压、斜拉三种剪切破坏形式，其破坏性质分别为（）。",
+  "bullets": [
+   "•梁有斜压、剪压、斜拉三种剪切破坏形式，其破坏性质分别为（）。",
+   "A.均属于脆性破坏",
+   "B.煎压破坯属于延性破坏，其它两种破坏属于脆性破坏",
+   "C.均属于延性破坏",
+   "D.斜拉破坏属于延性破坏，其它两种破坏属于脆性破坏"
+  ],
+  "image": "/slides/slide-133.png"
+ },
+ {
+  "page": 134,
+  "section": "K10 有腹筋梁受剪性能",
+  "title": "R= 课外预习（复习 , 作业）时间 / 课堂教学时间：",
+  "bullets": [
+   "– 学习工程结构设计原理这门课程正确的时间分配。",
+   "R= 课外预习（复习 , 作业）时间 / 课堂教学时间：",
+   "– （ a ） R<1/2",
+   "– （ b ） 1/2<R<2/3",
+   "– （ c ） 2/3<R<3/2",
+   "– （ d ） R>3/2",
+   "– 学习工程结构设计原理这门课程实际的时间分配。 R= 课外预习（复",
+   "习 , 作业）时间 / 课堂教学时间：",
+   "– （ a ） R<1/2",
+   "– （ b ） 1/2<R<2/3",
+   "– （ c ） 2/3<R<3/2",
+   "– （ d ） R>3/2"
+  ],
+  "image": "/slides/slide-134.png"
+ },
+ {
+  "page": 135,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "6.3.3 斜截面受剪承载力计算",
+  "bullets": [
+   "6.3.3 斜截面受剪承载力计算",
+   "• 计算公式的表达式",
+   "– 《规范》所建议的公式是采用理论与经验相结合的方法，",
+   "通过对试验数据原统计分析得出的",
+   "– 对于斜拉破坏和斜压破坏，一般是用构造措施予以避免",
+   "• 在设计时，通过配置构造箍筋，就可避免发生斜拉破坏",
+   "• 当控制梁的截面尺寸不致过小时，就可以防止发生斜压破坏"
+  ],
+  "image": "/slides/slide-135.png"
+ },
+ {
+  "page": 136,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "None",
+  "bullets": [
+   "– 假定梁的斜截面受剪承载力为 Vu ，则"
+  ],
+  "image": "/slides/slide-136.png"
+ },
+ {
+  "page": 137,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "对矩形 ,T 形和 I 形截面的一般受弯构件",
+  "bullets": [
+   "干货专用章",
+   "– 一般受弯构件仅配箍筋时的受剪承载力计算公式",
+   "对矩形 ,T 形和 I 形截面的一般受弯构件",
+   "Asv",
+   "V Vcs 0.7 f t bh0  f yv",
+   "h0",
+   "• 第一项为剪压区混凝土承受的剪力和销栓作用、咬合作用之和",
+   "s",
+   "• 第二项为箍筋抗剪作用及其对第一项的提高作用",
+   "• 上述二项表达式应理解为二项之和代表有箍筋梁的受剪承载力",
+   "• 采用上式计算受剪承载力，也能基本上达到控制使用荷载下斜缝开展",
+   "宽度不超过 0.2mm 的要示"
+  ],
+  "image": "/slides/slide-137.png"
+ },
+ {
+  "page": 138,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "• 集中荷载下独立梁的受剪承载力计算公式",
+  "bullets": [
+   "干货专用章",
+   "• 集中荷载下独立梁的受剪承载力计算公式",
+   "– 包括作用有多种荷载，且其中集中荷载对支座截面或节点边缘所",
+   "产生的剪力值占总剪力值的 75% 以上的情况",
+   "Asv",
+   "1.75",
+   "V Vcs ",
+   "f t bh0  f yv",
+   "h0",
+   "  1.0",
+   "s",
+   "为计算截面的剪跨比，为计算截面至支座截面或节点边缘的距离；"
+  ],
+  "image": "/slides/slide-138.png"
+ },
+ {
+  "page": 139,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "• 配置弯起钢筋梁的受剪承载力计算公式",
+  "bullets": [
+   "• 配置弯起钢筋梁的受剪承载力计算公式",
+   "– 弯起钢筋所能承担的剪力：弯起钢筋的总拉力在垂直于梁纵",
+   "轴方向的分力",
+   "Vsb=0.8fyAsbsinas",
+   "– 系数 0.8 是考虑弯起钢筋在破坏时可能达不到其屈服强度的应力不均",
+   "匀系数"
+  ],
+  "image": "/slides/slide-139.png"
+ },
+ {
+  "page": 140,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "V Vcs  Vsb Vcs  0.8 f y Asb sin as",
+  "bullets": [
+   "干货专用章",
+   "– 配有箍筋和弯起钢筋的矩形、 T 形和 I 形截面的",
+   "受弯构件",
+   "V Vcs  Vsb Vcs  0.8 f y Asb sin as",
+   "• 梁中配有几排弯起钢筋的情况"
+  ],
+  "image": "/slides/slide-140.png"
+ },
+ {
+  "page": 141,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "• 不配置腹筋的一般板类受弯构件的斜截面受剪承载力计算公式",
+  "bullets": [
+   "干货专用章",
+   "• 不配置腹筋的一般板类受弯构件的斜截面受剪承载力计算公式",
+   "Vc=0.7 ftbh0",
+   "h",
+   "–",
+   "——截面高度影响系数：",
+   "– 当",
+   "时，取",
+   "当",
+   "时，取",
+   "h",
+   " h ("
+  ],
+  "image": "/slides/slide-141.png"
+ },
+ {
+  "page": 142,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "• 计算截面位置",
+  "bullets": [
+   "• 计算截面位置",
+   "– 支座边缘处的截面",
+   "– 受拉区弯起钢筋弯起点处的截面",
+   "– 箍筋截面面积或间距改变处的截面",
+   "– 腹板宽度改变处的截面",
+   "– 计算时应取这些斜截面范围内的最大剪力，即取斜截面起始",
+   "端处的剪力作为剪力计算剪力。"
+  ],
+  "image": "/slides/slide-142.png"
+ },
+ {
+  "page": 143,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "适用条件",
+  "bullets": [
+   "适用条件",
+   "干货专用章",
+   "– 作用：防止斜压破坏和斜拉破坏，保证发生剪压破坏",
+   "– 上限——截面限制条件：防止斜压破坏",
+   "• 该条件也是受弯构件的最大配箍率的条件",
+   "当 hw/b≤4 时",
+   "V≤0.25 fcbh0",
+   "c",
+   "当 hw/b≥6 时 V≤0.2  cfcbh0",
+   "当 4<hw/b<6 时，按线性内插法取用。",
+   "c",
+   "式中 ——混凝土强度影响系数"
+  ],
+  "image": "/slides/slide-143.png"
+ },
+ {
+  "page": 144,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "• 当梁内配置一定数量的箍筋，且其间距又不过大，能保证与斜",
+  "bullets": [
+   "干货专用章",
+   "– 下限——最小配箍量：防止斜拉破坏",
+   "• 当梁内配置一定数量的箍筋，且其间距又不过大，能保证与斜",
+   "裂缝相交时，即可防止发生斜拉破坏，且能抑制斜裂缝的发展，",
+   "改善纵筋的锚固",
+   "Asv",
+   "ft",
+   " sv ",
+   "  sv ,min 0.24",
+   "bs",
+   "f yv"
+  ],
+  "image": "/slides/slide-144.png"
+ },
+ {
+  "page": 145,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "当 >0.25t.bh时，应采取的措施是（）。",
+  "bullets": [
+   "当 >0.25t.bh时，应采取的措施是（）。",
+   "A. 增大箍筋直径或减小箍筋间距",
+   "B. 增大压区翼缘，形成T形截面",
+   "C. 提高箍筋抗拉强度或加配弯起钢筋",
+   "D. 增大截面尺寸",
+   "梁的斜戴面受煎承载力计算是以〈）为依据的。",
+   "A. 斜拉破坏",
+   "B.煎压破坯",
+   "C. 斜压破坏",
+   "D.斜弯破坏"
+  ],
+  "image": "/slides/slide-145.png"
+ },
+ {
+  "page": 146,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "计算方法",
+  "bullets": [
+   "计算方法",
+   "– 设计截面",
+   "• 已知剪力设计值、截面尺寸、材料的强度设计值等",
+   "• 计算确定箍筋和弯起钢筋的数量",
+   "– 设计步骤",
+   "• 计算剪力，必要时作剪力图",
+   "• 复核梁的截面尺寸是否足够",
+   "• 确定是否需要按计算配置腹筋",
+   "• 分别按两种情况考虑：",
+   "仅配箍筋",
+   "兼配弯起钢筋",
+   "• 检查是否满足最小配箍量的要求"
+  ],
+  "image": "/slides/slide-146.png"
+ },
+ {
+  "page": 147,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "• 已知截面尺寸、材料的强度设计值、配箍量、弯筋量等",
+  "bullets": [
+   "– 截面复核",
+   "• 已知截面尺寸、材料的强度设计值、配箍量、弯筋量等",
+   "• 求复核梁的斜截面所能承受的剪力设计值",
+   "• 只需将已知量代入有关公式计算即可。复核时应注意正确确定",
+   "公式中的系数",
+   "• 例题 6 － 10"
+  ],
+  "image": "/slides/slide-147.png"
+ },
+ {
+  "page": 148,
+  "section": "K11 斜截面受剪承载力计算",
+  "title": "方混凝土梁进行斜截面抗剪设计时，应满足V≤0.258.fb g，目的是：",
+  "bullets": [
+   "方混凝土梁进行斜截面抗剪设计时，应满足V≤0.258.fb g，目的是：",
+   "防止发生斜压破坏；",
+   "B．防止发生斜拉破坏；",
+   "防止荔生煎压破坯；",
+   "D.防止发生剪切破坏。"
+  ],
+  "image": "/slides/slide-148.png"
+ }
+]

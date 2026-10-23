@@ -1,0 +1,602 @@
+{
+  "SC-01": {
+    "difficulty": "medium",
+    "rationale": "由中和轴高度判断受压钢筋屈服条件"
+  },
+  "SC-02": {
+    "difficulty": "medium",
+    "rationale": "区分弯起钢筋间距对斜截面抗弯和抗剪的作用"
+  },
+  "SC-03": {
+    "difficulty": "easy",
+    "rationale": "识记抗扭纵筋和箍筋的共同配置"
+  },
+  "SC-04": {
+    "difficulty": "medium",
+    "rationale": "联结适筋破坏顺序与两种极限应变"
+  },
+  "SC-05": {
+    "difficulty": "medium",
+    "rationale": "区分直径对裂缝宽度和承载力的影响"
+  },
+  "SC-06": {
+    "difficulty": "medium",
+    "rationale": "区分材料强度取值与开裂应变条件"
+  },
+  "SC-07": {
+    "difficulty": "hard",
+    "rationale": "比较三种剪切破坏的剪跨比和承载力次序"
+  },
+  "SC-08": {
+    "difficulty": "hard",
+    "rationale": "同时比较开裂、配筋率边界与承载力增长条件"
+  },
+  "SC-09": {
+    "difficulty": "medium",
+    "rationale": "由截面限制条件选择增大截面措施"
+  },
+  "SC-10": {
+    "difficulty": "easy",
+    "rationale": "识记正常使用验算采用标准值"
+  },
+  "SC-11": {
+    "difficulty": "medium",
+    "rationale": "由超筋破坏判断钢筋未屈服而混凝土压碎"
+  },
+  "SC-12": {
+    "difficulty": "easy",
+    "rationale": "识记抗剪公式依据剪压破坏"
+  },
+  "SC-13": {
+    "difficulty": "medium",
+    "rationale": "比较不同截面与材料调整对刚度的效果"
+  },
+  "SC-14": {
+    "difficulty": "medium",
+    "rationale": "将应变不均匀系数与混凝土参与工作程度关联"
+  },
+  "SC-15": {
+    "difficulty": "easy",
+    "rationale": "辨认承载能力极限状态的基本表现"
+  },
+  "SC-16": {
+    "difficulty": "easy",
+    "rationale": "识记斜截面抗剪公式依据"
+  },
+  "SC-17": {
+    "difficulty": "easy",
+    "rationale": "识别屈服与压碎同时发生的平衡配筋定义"
+  },
+  "SC-18": {
+    "difficulty": "medium",
+    "rationale": "识别折算荷载所补偿的支座抗扭简化"
+  },
+  "SC-19": {
+    "difficulty": "easy",
+    "rationale": "识记截面限制条件防止斜压破坏"
+  },
+  "SC-20": {
+    "difficulty": "medium",
+    "rationale": "将剪跨比区间对应到斜压破坏"
+  },
+  "SC-21": {
+    "difficulty": "medium",
+    "rationale": "将剪跨比区间对应到剪压破坏"
+  },
+  "SC-22": {
+    "difficulty": "medium",
+    "rationale": "将剪跨比区间对应到斜拉破坏"
+  },
+  "SC-23": {
+    "difficulty": "easy",
+    "rationale": "识记室内正常环境类别"
+  },
+  "SC-24": {
+    "difficulty": "easy",
+    "rationale": "识记三种剪切破坏的脆性性质"
+  },
+  "SC-25": {
+    "difficulty": "easy",
+    "rationale": "识记正截面公式采用适筋破坏模型"
+  },
+  "SC-26": {
+    "difficulty": "medium",
+    "rationale": "将中和轴高度与受压钢筋屈服关联"
+  },
+  "SC-27": {
+    "difficulty": "hard",
+    "rationale": "同时核对受压和受拉钢筋的两个屈服边界"
+  },
+  "SC-28": {
+    "difficulty": "medium",
+    "rationale": "区分T形两类截面的受压区几何形状"
+  },
+  "SC-29": {
+    "difficulty": "medium",
+    "rationale": "由受压钢筋不屈服反推配置条件"
+  },
+  "SC-30": {
+    "difficulty": "medium",
+    "rationale": "区分最小配箍率与截面限制的破坏控制对象"
+  },
+  "SC-31": {
+    "difficulty": "hard",
+    "rationale": "综合三种剪切破坏条件比较承载力大小"
+  },
+  "SC-32": {
+    "difficulty": "medium",
+    "rationale": "由裂缝截面钢筋应力判断减小裂缝措施"
+  },
+  "SC-33": {
+    "difficulty": "medium",
+    "rationale": "判断剪跨比影响的方向与适用范围"
+  },
+  "SC-34": {
+    "difficulty": "medium",
+    "rationale": "区分配筋对开裂和极限承载力的不同作用"
+  },
+  "SC-35": {
+    "difficulty": "medium",
+    "rationale": "比较混凝土钢筋等级与直径对锚固的作用"
+  },
+  "SC-36": {
+    "difficulty": "medium",
+    "rationale": "联合判断适筋破坏时两种应变状态"
+  },
+  "SC-37": {
+    "difficulty": "medium",
+    "rationale": "比较三类配筋对应的相对受压区高度"
+  },
+  "SC-38": {
+    "difficulty": "hard",
+    "rationale": "区分刚度影响因素与承载力合格的适用边界"
+  },
+  "SC-39": {
+    "difficulty": "easy",
+    "rationale": "识记裂缝宽度的测量位置"
+  },
+  "SC-40": {
+    "difficulty": "medium",
+    "rationale": "比较钢筋面积直径截面与材料的裂缝控制效果"
+  },
+  "SC-41": {
+    "difficulty": "medium",
+    "rationale": "从裂缝间距关系区分相关与无关参数"
+  },
+  "SC-42": {
+    "difficulty": "medium",
+    "rationale": "辨认裂缝形成机理与稳定发展阶段"
+  },
+  "SC-43": {
+    "difficulty": "easy",
+    "rationale": "识记普通混凝土的裂缝控制等级"
+  },
+  "SC-44": {
+    "difficulty": "medium",
+    "rationale": "按T形截面的最小配筋率计算钢筋面积；原图缺失"
+  },
+  "SC-45": {
+    "difficulty": "medium",
+    "rationale": "将抗剪截面限制公式对应到斜压控制"
+  },
+  "SC-46": {
+    "difficulty": "medium",
+    "rationale": "区分素混凝土抗扭的弹性和塑性模型"
+  },
+  "SC-47": {
+    "difficulty": "hard",
+    "rationale": "用应变系数代入短期刚度并完成数值比较；资料不全"
+  },
+  "SC-48": {
+    "difficulty": "medium",
+    "rationale": "比较配筋率不变时截面高宽的抗剪作用"
+  },
+  "SC-49": {
+    "difficulty": "medium",
+    "rationale": "比较混凝土截面纵筋与箍筋对抗剪的影响"
+  },
+  "SC-50": {
+    "difficulty": "hard",
+    "rationale": "保持钢筋用量比较承载力裂缝与挠度三项变化"
+  },
+  "SC-51": {
+    "difficulty": "hard",
+    "rationale": "结合剪扭截面限制区分提高截面与增加钢筋的效果"
+  },
+  "SC-52": {
+    "difficulty": "medium",
+    "rationale": "联合判断适筋破坏的钢筋和混凝土应变"
+  },
+  "SC-53": {
+    "difficulty": "medium",
+    "rationale": "区分弯起钢筋间距的抗弯和抗剪用途"
+  },
+  "SC-54": {
+    "difficulty": "easy",
+    "rationale": "识记暴露环境允许裂缝但需要控制宽度"
+  },
+  "SC-55": {
+    "difficulty": "medium",
+    "rationale": "联结受压钢筋对承载力和徐变的双重影响"
+  },
+  "SC-56": {
+    "difficulty": "medium",
+    "rationale": "由抗扭配筋强度比判断两类钢筋屈服"
+  },
+  "SC-57": {
+    "difficulty": "hard",
+    "rationale": "由弯矩求钢筋应力再计算应变系数；资料不全"
+  },
+  "SC-58": {
+    "difficulty": "easy",
+    "rationale": "识记保护层从箍筋外表面起算"
+  },
+  "SC-59": {
+    "difficulty": "medium",
+    "rationale": "区分碳化裂缝与受力裂缝的控制措施"
+  },
+  "SC-60": {
+    "difficulty": "hard",
+    "rationale": "区分超筋界限和少筋界限的多个条件"
+  },
+  "SC-61": {
+    "difficulty": "medium",
+    "rationale": "应用相对受压区高度与抵抗矩系数关系"
+  },
+  "SC-62": {
+    "difficulty": "medium",
+    "rationale": "区分材料强度与几何尺寸对界限高度的影响"
+  },
+  "SC-63": {
+    "difficulty": "medium",
+    "rationale": "比较提高正截面承载力的不同措施"
+  },
+  "SC-64": {
+    "difficulty": "easy",
+    "rationale": "识记等效矩形受压应力分布假定"
+  },
+  "SC-65": {
+    "difficulty": "medium",
+    "rationale": "区分截面和配箍限制的破坏控制对象"
+  },
+  "SC-66": {
+    "difficulty": "medium",
+    "rationale": "区分抵抗弯矩包络保证的正斜截面性能"
+  },
+  "SC-67": {
+    "difficulty": "easy",
+    "rationale": "识记弯起点外移的构造长度；公式占位待修复"
+  },
+  "SC-68": {
+    "difficulty": "easy",
+    "rationale": "识记梁板受拉钢筋搭接百分率"
+  },
+  "SC-69": {
+    "difficulty": "medium",
+    "rationale": "将抗扭配筋强度比与钢筋屈服关联"
+  },
+  "SC-70": {
+    "difficulty": "easy",
+    "rationale": "识记抗扭配筋强度比限值"
+  },
+  "SC-71": {
+    "difficulty": "medium",
+    "rationale": "区分剪扭计算中混凝土和钢筋的相关模型"
+  },
+  "SC-72": {
+    "difficulty": "hard",
+    "rationale": "分解T形或I形截面并分配剪力与扭矩"
+  },
+  "SC-73": {
+    "difficulty": "medium",
+    "rationale": "比较荷载时间和裂缝对刚度的影响"
+  },
+  "SC-74": {
+    "difficulty": "easy",
+    "rationale": "识记变形裂缝验算的荷载与材料取值"
+  },
+  "SC-75": {
+    "difficulty": "medium",
+    "rationale": "识别受弯挠度公式的参数关系；选项缺失"
+  },
+  "SC-76": {
+    "difficulty": "medium",
+    "rationale": "区分材料强度与截面高度对界限高度的影响"
+  },
+  "SC-77": {
+    "difficulty": "easy",
+    "rationale": "识记翼缘内等效压应力均匀分布"
+  },
+  "SC-78": {
+    "difficulty": "medium",
+    "rationale": "由配筋强度比边界判断纵筋箍筋协调屈服"
+  },
+  "SC-79": {
+    "difficulty": "hard",
+    "rationale": "辨认抗剪计算对裂缝锚固和破坏方式的保证边界"
+  },
+  "SC-80": {
+    "difficulty": "hard",
+    "rationale": "区分弯起位置弯矩包络和间距三个条件"
+  },
+  "SC-81": {
+    "difficulty": "medium",
+    "rationale": "根据开裂前共同变形估计钢筋应力量级"
+  },
+  "FB-01": {
+    "difficulty": "easy",
+    "rationale": "识记抗扭箍筋采用封闭形式"
+  },
+  "FB-02": {
+    "difficulty": "medium",
+    "rationale": "解释应变不均匀系数的物理含义"
+  },
+  "FB-03": {
+    "difficulty": "medium",
+    "rationale": "区分抗扭强度的塑性计算模型"
+  },
+  "FB-04": {
+    "difficulty": "medium",
+    "rationale": "分别对应配箍和截面限制的两种破坏"
+  },
+  "FB-05": {
+    "difficulty": "easy",
+    "rationale": "识记适筋梁及其延性性质"
+  },
+  "FB-06": {
+    "difficulty": "medium",
+    "rationale": "关联平衡配筋定义与最大配筋率边界"
+  },
+  "FB-07": {
+    "difficulty": "medium",
+    "rationale": "由弯矩和剪力组合解释剪跨比"
+  },
+  "FB-08": {
+    "difficulty": "hard",
+    "rationale": "结合连续梁弯矩正负与受压翼缘判断截面类型"
+  },
+  "TF-01": {
+    "difficulty": "easy",
+    "rationale": "识别正常使用所处受弯工作阶段"
+  },
+  "TF-02": {
+    "difficulty": "hard",
+    "rationale": "组合弯曲和抗扭的最小纵筋配置要求"
+  },
+  "TF-03": {
+    "difficulty": "medium",
+    "rationale": "联结受压钢筋和截面延性的变化"
+  },
+  "TF-04": {
+    "difficulty": "medium",
+    "rationale": "比较连续与简支边界条件下的抗剪能力"
+  },
+  "TF-05": {
+    "difficulty": "easy",
+    "rationale": "识记抗扭配筋强度比需要限值"
+  },
+  "TF-06": {
+    "difficulty": "easy",
+    "rationale": "识记原课件采用的常用钢筋等级"
+  },
+  "TF-07": {
+    "difficulty": "medium",
+    "rationale": "辨认双筋经济性的条件边界"
+  },
+  "TF-08": {
+    "difficulty": "easy",
+    "rationale": "识记抗剪公式的剪压基础"
+  },
+  "TF-09": {
+    "difficulty": "medium",
+    "rationale": "判断纵筋直径对裂缝宽度的作用"
+  },
+  "TF-10": {
+    "difficulty": "easy",
+    "rationale": "识记时间作用使刚度降低"
+  },
+  "TF-11": {
+    "difficulty": "easy",
+    "rationale": "识记荷载增加使开裂刚度降低"
+  },
+  "TF-12": {
+    "difficulty": "medium",
+    "rationale": "区分裂缝稳定阶段与持续发展"
+  },
+  "TF-13": {
+    "difficulty": "hard",
+    "rationale": "综合素混凝土开裂和配筋后承载延性的变化"
+  },
+  "TF-14": {
+    "difficulty": "medium",
+    "rationale": "联结平截面应变协调与界限高度"
+  },
+  "TF-15": {
+    "difficulty": "easy",
+    "rationale": "识记梁侧边钢筋的弯起构造约束"
+  },
+  "TF-16": {
+    "difficulty": "medium",
+    "rationale": "联结平截面应变协调与界限高度"
+  },
+  "TF-17": {
+    "difficulty": "easy",
+    "rationale": "识记适筋梁的破坏顺序"
+  },
+  "TF-18": {
+    "difficulty": "hard",
+    "rationale": "区分正截面弯矩包络与斜截面承载力的保证条件"
+  },
+  "TF-19": {
+    "difficulty": "medium",
+    "rationale": "区分高强钢筋与高强混凝土的使用效果"
+  },
+  "TF-20": {
+    "difficulty": "easy",
+    "rationale": "识记裂缝开展的混凝土回缩和钢筋伸长机理"
+  },
+  "TF-21": {
+    "difficulty": "easy",
+    "rationale": "识记梁侧边钢筋不可弯起"
+  },
+  "TF-22": {
+    "difficulty": "medium",
+    "rationale": "由剪力主导判断弯剪斜裂缝形式"
+  },
+  "TF-23": {
+    "difficulty": "easy",
+    "rationale": "识记平衡扭转由静力平衡确定"
+  },
+  "TF-24": {
+    "difficulty": "medium",
+    "rationale": "识别截面复核条件与破坏判别；题干条件缺失"
+  },
+  "TF-25": {
+    "difficulty": "easy",
+    "rationale": "识记截面尺寸影响抗剪能力"
+  },
+  "TF-26": {
+    "difficulty": "easy",
+    "rationale": "识记剪跨比影响集中荷载下的抗剪"
+  },
+  "TF-27": {
+    "difficulty": "medium",
+    "rationale": "按不同钢筋强度匹配混凝土粘结要求"
+  },
+  "TF-28": {
+    "difficulty": "easy",
+    "rationale": "识记保护层的起算位置"
+  },
+  "TF-29": {
+    "difficulty": "medium",
+    "rationale": "比较保护层耐久收益与裂缝宽度不利影响"
+  },
+  "TF-30": {
+    "difficulty": "easy",
+    "rationale": "识记长期挠度增长的徐变收缩原因"
+  },
+  "TF-31": {
+    "difficulty": "hard",
+    "rationale": "区分三种剪切破坏分别由抗拉或抗压控制"
+  },
+  "TF-32": {
+    "difficulty": "easy",
+    "rationale": "识记正截面计算不计受拉混凝土"
+  },
+  "TF-33": {
+    "difficulty": "easy",
+    "rationale": "识记抗剪模型不是斜拉破坏"
+  },
+  "TF-34": {
+    "difficulty": "medium",
+    "rationale": "将粘结传递长度换算为裂缝间距"
+  },
+  "TF-35": {
+    "difficulty": "medium",
+    "rationale": "区分钢筋理论截断点与实际延伸锚固要求"
+  },
+  "TF-36": {
+    "difficulty": "easy",
+    "rationale": "识记斜截面破坏均为脆性"
+  },
+  "TF-37": {
+    "difficulty": "easy",
+    "rationale": "识记三种斜截面破坏名称"
+  },
+  "TF-38": {
+    "difficulty": "hard",
+    "rationale": "核对弯剪扭钢筋叠加与剪扭相关的多个前提"
+  },
+  "TF-39": {
+    "difficulty": "easy",
+    "rationale": "识记裂缝开展机理"
+  },
+  "TF-40": {
+    "difficulty": "easy",
+    "rationale": "识记正常使用验算应采用标准值"
+  },
+  "TF-41": {
+    "difficulty": "hard",
+    "rationale": "区分T形受压计算宽度与最小配筋率的面积基准"
+  },
+  "TF-42": {
+    "difficulty": "medium",
+    "rationale": "区分超静定扭转的平衡和变形协调条件"
+  },
+  "TF-43": {
+    "difficulty": "medium",
+    "rationale": "判断增加保护层对裂缝宽度的不利影响"
+  },
+  "TF-44": {
+    "difficulty": "easy",
+    "rationale": "识记板分布钢筋与受力钢筋的相对位置"
+  },
+  "TF-45": {
+    "difficulty": "medium",
+    "rationale": "区分剪扭模型的混凝土相关与钢筋独立叠加"
+  },
+  "TF-46": {
+    "difficulty": "easy",
+    "rationale": "识记规范裂缝宽度的表面位置"
+  },
+  "Q-K12-01": {
+    "difficulty": "medium",
+    "rationale": "区分开裂扭矩系数与材料强度取值"
+  },
+  "Q-K12-02": {
+    "difficulty": "hard",
+    "rationale": "识别混凝土折减不能同时施加于箍筋项"
+  },
+  "Q-K12-03": {
+    "difficulty": "hard",
+    "rationale": "核对配筋强度比公式限值和屈服边界"
+  },
+  "Q-K12-04": {
+    "difficulty": "hard",
+    "rationale": "综合剪力扭矩及截面高宽边界核对公式"
+  },
+  "Q-K12-05": {
+    "difficulty": "medium",
+    "rationale": "用小扭矩边界判断可简化的承载力计算"
+  },
+  "Q-K13-01": {
+    "difficulty": "medium",
+    "rationale": "区分短期刚度公式中配筋率和翼缘参数"
+  },
+  "Q-K13-02": {
+    "difficulty": "easy",
+    "rationale": "识记无受压钢筋的长期挠度系数"
+  },
+  "Q-K13-03": {
+    "difficulty": "medium",
+    "rationale": "关联同号弯矩区段与最大弯矩截面刚度"
+  },
+  "Q-K13-04": {
+    "difficulty": "medium",
+    "rationale": "比较截面和材料调整对挠度的效果"
+  },
+  "Q-K13-05": {
+    "difficulty": "easy",
+    "rationale": "识记原规范挠度验算的荷载组合"
+  },
+  "Q-K14-01": {
+    "difficulty": "medium",
+    "rationale": "区分裂缝公式系数及配筋率的分子分母"
+  },
+  "Q-K14-02": {
+    "difficulty": "medium",
+    "rationale": "区分平均应变与裂缝处应变的比例"
+  },
+  "Q-K14-03": {
+    "difficulty": "hard",
+    "rationale": "综合钢筋强度直径面积和应力对裂缝的影响"
+  },
+  "Q-K14-04": {
+    "difficulty": "medium",
+    "rationale": "结合环境类别和湿度附加条件选择宽度限值"
+  },
+  "Q-K14-05": {
+    "difficulty": "medium",
+    "rationale": "比较保护层直径面积与粘结对裂缝的影响"
+  }
+}

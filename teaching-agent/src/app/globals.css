@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-paper-soft text-ink antialiased;
+  font-feature-settings: "tnum" on;
+}
+
+::selection {
+  background: #e6e6df;
+}
+
+/* 细滚动条，减少视觉噪音 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #dcdcd6 transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #dcdcd6;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.katex {
+  font-size: 1.02em;
+}
+
+textarea {
+  field-sizing: content;
+}
+
+/* ---------- Markdown 正文 ---------- */
+.md-body {
+  font-size: 14px;
+  line-height: 1.75;
+  word-break: break-word;
+}
+.md-body.md-inline {
+  font-size: inherit;
+  line-height: inherit;
+}
+.md-body.md-inline p {
+  margin: 0;
+}
+.md-body > *:first-child {
+  margin-top: 0;
+}
+.md-body > *:last-child {
+  margin-bottom: 0;
+}
+.md-body p {
+  margin: 0.55em 0;
+}
+.md-body h1,
+.md-body h2,
+.md-body h3,
+.md-body h4 {
+  margin: 1em 0 0.45em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.md-body h1 {
+  font-size: 17px;
+}
+.md-body h2 {
+  font-size: 16px;
+}
+.md-body h3,
+.md-body h4 {
+  font-size: 15px;
+}
+.md-body ul,
+.md-body ol {
+  margin: 0.5em 0;
+  padding-left: 1.35em;
+}
+.md-body ul {
+  list-style: disc;
+}
+.md-body ol {
+  list-style: decimal;
+}
+.md-body li {
+  margin: 0.25em 0;
+}
+.md-body li::marker {
+  color: #8a8a82;
+}
+.md-body strong {
+  font-weight: 600;
+}
+.md-body em {
+  font-style: normal;
+  color: #4a4a44;
+}
+.md-body code {
+  background: #f0efe9;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+  font-size: 12.5px;
+}
+.md-body pre {
+  background: #f4f3ee;
+  border: 1px solid #e3e3dc;
+  border-radius: 10px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  margin: 0.6em 0;
+}
+.md-body pre code {
+  background: none;
+  padding: 0;
+}
+.md-body blockquote {
+  border-left: 3px solid #ddd9cf;
+  margin: 0.6em 0;
+  padding: 0.1em 0 0.1em 0.8em;
+  color: #6b6b63;
+}
+.md-body table {
+  border-collapse: collapse;
+  margin: 0.6em 0;
+  font-size: 13px;
+}
+.md-body th,
+.md-body td {
+  border: 1px solid #e3e3dc;
+  padding: 5px 9px;
+}
+.md-body th {
+  background: #f4f3ee;
+  font-weight: 600;
+}
+.md-body hr {
+  border: 0;
+  border-top: 1px solid #e8e8e0;
+  margin: 0.9em 0;
+}
+.md-body .katex-display {
+  margin: 0.7em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 要点高亮 */
+.hl-key {
+  display: inline;
+  background: #fff3bf;
+  border-radius: 3px;
+  padding: 0 3px;
+  box-shadow: inset 0 -1px 0 #f2df8c;
+  font-weight: 500;
+}
+
+/* ---------- 动画 ---------- */
+@keyframes ch6-bounce {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  35% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+@keyframes ch6-shimmer {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+.ch6-shimmer {
+  animation: ch6-shimmer 1.5s ease-in-out infinite;
+}
+@keyframes ch6-drawer-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.ch6-drawer {
+  animation: ch6-drawer-in 0.22s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@keyframes ch6-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.ch6-fade {
+  animation: ch6-fade-in 0.18s ease-out;
+}
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 240 6% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 6% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 6% 11%;
+    --primary: 240 6% 11%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 14% 96%;
+    --secondary-foreground: 240 6% 11%;
+    --muted: 40 14% 96%;
+    --muted-foreground: 240 4% 56%;
+    --accent: 40 18% 94%;
+    --accent-foreground: 240 6% 11%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 8% 90%;
+    --input: 40 8% 90%;
+    --ring: 240 6% 11%;
+    --radius: 0.9rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 6% 11%;
+    --sidebar-primary: 240 6% 11%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 18% 96%;
+    --sidebar-accent-foreground: 240 6% 11%;
+    --sidebar-border: 40 8% 90%;
+    --sidebar-ring: 240 6% 11%;
+  }
+  .dark {
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

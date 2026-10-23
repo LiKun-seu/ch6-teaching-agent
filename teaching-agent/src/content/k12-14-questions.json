@@ -1,0 +1,398 @@
+[
+  {
+    "id": "Q-K12-01",
+    "type": "choice",
+    "prompt": "矩形截面钢筋混凝土纯扭构件的开裂扭矩，按 GB 50010-2002 应取：",
+    "options": [
+      {
+        "id": "A",
+        "text": "$0.35f_tW_t$"
+      },
+      {
+        "id": "B",
+        "text": "$0.7f_tW_t$"
+      },
+      {
+        "id": "C",
+        "text": "$f_tW_{te}$"
+      },
+      {
+        "id": "D",
+        "text": "$0.7f_{tk}W_t$"
+      }
+    ],
+    "answer": "B",
+    "analysis": "开裂扭矩介于弹性解 $f_tW_{te}$ 与塑性解 $f_tW_t$ 之间，规范偏安全取 $T_{cr}=0.7f_tW_t$，且用抗拉强度设计值 $f_t$ 而非标准值 $f_{tk}$。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K12-02",
+    "type": "judge",
+    "prompt": "剪扭构件计算中，混凝土受扭承载力降低系数 $\\beta_t$ 应同时乘以混凝土项 $0.35f_tW_t$ 和箍筋项 $1.2\\sqrt{\\zeta}f_{yv}A_{st1}A_{cor}/s$。",
+    "options": [
+      {
+        "id": "T",
+        "text": "正确"
+      },
+      {
+        "id": "F",
+        "text": "错误"
+      }
+    ],
+    "answer": "F",
+    "analysis": "规范采用\"混凝土部分相关、钢筋部分叠加\"，$\\beta_t$ 只折减混凝土贡献项，箍筋贡献项不折减。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K12-03",
+    "type": "choice",
+    "prompt": "关于受扭纵向钢筋与箍筋的配筋强度比 $\\zeta$，下列说法正确的是：",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\zeta$ 只与箍筋用量有关，与纵筋无关"
+      },
+      {
+        "id": "B",
+        "text": "$\\zeta=\\dfrac{f_yA_{stl}s}{f_{yv}A_{st1}u_{cor}}$，应满足 $0.6\\le\\zeta\\le1.7$，设计常取 1.0~1.3"
+      },
+      {
+        "id": "C",
+        "text": "$\\zeta$ 越大受扭承载力越高，故计算值大于 1.7 时应按实际值取用"
+      },
+      {
+        "id": "D",
+        "text": "$\\zeta=1.0$ 时混凝土斜压杆与构件轴线夹角约为 30°"
+      }
+    ],
+    "answer": "B",
+    "analysis": "$\\zeta$ 由纵筋与箍筋共同决定；计算值 $>1.7$ 时必须取 1.7；$\\zeta=1.0$ 时斜压杆约 45°（30°~60° 是试验常见范围）。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K12-04",
+    "type": "choice",
+    "prompt": "对 $h_w/b\\le4$ 的矩形截面弯剪扭构件，GB 50010-2002 规定的截面限制条件（防止斜压破坏）为：",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\dfrac{V}{bh_0}+\\dfrac{T}{0.8W_t}\\le0.25\\beta_cf_c$"
+      },
+      {
+        "id": "B",
+        "text": "$\\dfrac{V}{bh_0}+\\dfrac{T}{W_t}\\le0.25\\beta_cf_c$"
+      },
+      {
+        "id": "C",
+        "text": "$T\\le0.2\\beta_cf_cW_t$，即认为与剪力 $V$ 无关"
+      },
+      {
+        "id": "D",
+        "text": "$V\\le0.25\\beta_cf_c\\,bh_0$，与 $T$ 无关"
+      }
+    ],
+    "answer": "A",
+    "analysis": "2002 版第 7.6.1 条采用 $V/(bh_0)+T/(0.8W_t)$ 的组合形式；纯扭（$V=0$）时才退化为 $T\\le0.2\\beta_cf_cW_t$。该条件不满足时只能加大截面或提高混凝土强度等级。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K12-05",
+    "type": "choice",
+    "prompt": "矩形截面弯剪扭构件，当扭矩设计值满足下列哪项时，可仅按受弯构件的正截面受弯承载力和斜截面受剪承载力分别计算？",
+    "options": [
+      {
+        "id": "A",
+        "text": "$T\\le0.35f_tW_t$"
+      },
+      {
+        "id": "B",
+        "text": "$T\\le0.7f_tW_t$"
+      },
+      {
+        "id": "C",
+        "text": "$T\\le0.175f_tW_t$"
+      },
+      {
+        "id": "D",
+        "text": "$T\\le0.2\\beta_cf_cW_t$"
+      }
+    ],
+    "answer": "C",
+    "analysis": "第 7.6.11 条规定 $T\\le0.175f_tW_t$（即不大于开裂扭矩 $0.7f_tW_t$ 的 1/4）时可忽略扭矩的影响。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K13-01",
+    "type": "choice",
+    "prompt": "GB 50010-2002 中钢筋混凝土受弯构件短期刚度 $B_s$ 的计算公式为：",
+    "options": [
+      {
+        "id": "A",
+        "text": "$B_s=\\dfrac{E_sA_sh_0^2}{1.15\\psi+0.2+\\dfrac{6\\alpha_E\\rho}{1+3.5\\gamma_f'}}$"
+      },
+      {
+        "id": "B",
+        "text": "$B_s=0.85E_cI_0$"
+      },
+      {
+        "id": "C",
+        "text": "$B_s=\\dfrac{E_sA_sh_0^2}{1.15\\psi+0.2+6\\alpha_E\\rho_{te}}$"
+      },
+      {
+        "id": "D",
+        "text": "$B_s=E_cI_0\\left(1+\\dfrac{6\\alpha_E\\rho}{1+3.5\\gamma_f'}\\right)$"
+      }
+    ],
+    "answer": "A",
+    "analysis": "B 为预应力混凝土要求不出现裂缝构件的公式；C 错把 $\\rho$ 写成 $\\rho_{te}$ 且丢了受压翼缘项。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K13-02",
+    "type": "choice",
+    "prompt": "单筋矩形截面梁（无受压钢筋）按 GB 50010-2002 计算长期挠度时，挠度增大系数 $\\theta$ 应取：",
+    "options": [
+      {
+        "id": "A",
+        "text": "1.6"
+      },
+      {
+        "id": "B",
+        "text": "1.75"
+      },
+      {
+        "id": "C",
+        "text": "2.0"
+      },
+      {
+        "id": "D",
+        "text": "2.4"
+      }
+    ],
+    "answer": "C",
+    "analysis": "$\\rho'=0$ 时 $\\theta=2.0$；$\\rho'=\\rho$ 时才取 1.6，中间按 $\\theta=2.0-0.4\\rho'/\\rho$ 线性内插。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K13-03",
+    "type": "judge",
+    "prompt": "\"最小刚度原则\"是指：在同号弯矩区段内假定刚度为常数，并取该区段内最大弯矩处截面的刚度作为该区段的刚度进行挠度计算。",
+    "options": [
+      {
+        "id": "T",
+        "text": "正确"
+      },
+      {
+        "id": "F",
+        "text": "错误"
+      }
+    ],
+    "answer": "T",
+    "analysis": "这正是第 8.2.1 条的表述，取最小刚度偏于安全且计算简便。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K13-04",
+    "type": "choice",
+    "prompt": "钢筋混凝土受弯构件挠度不满足要求时，下列措施中最有效的是：",
+    "options": [
+      {
+        "id": "A",
+        "text": "加大截面宽度 $b$"
+      },
+      {
+        "id": "B",
+        "text": "提高纵向受拉钢筋的强度等级"
+      },
+      {
+        "id": "C",
+        "text": "加大截面高度 $h$"
+      },
+      {
+        "id": "D",
+        "text": "提高箍筋配筋率"
+      }
+    ],
+    "answer": "C",
+    "analysis": "挠度大致与 $h_0^{3}$ 成反比，增大截面高度效果最显著；加大宽度、提高钢筋强度或增加箍筋收效甚微。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K13-05",
+    "type": "choice",
+    "prompt": "按 GB 50010-2002，钢筋混凝土受弯构件的最大挠度应按下列哪种荷载组合并考虑荷载长期作用的影响进行计算？",
+    "options": [
+      {
+        "id": "A",
+        "text": "荷载效应的基本组合"
+      },
+      {
+        "id": "B",
+        "text": "荷载效应的标准组合"
+      },
+      {
+        "id": "C",
+        "text": "荷载效应的准永久组合"
+      },
+      {
+        "id": "D",
+        "text": "荷载效应的偶然组合"
+      }
+    ],
+    "answer": "B",
+    "analysis": "2002 版第 3.3.2 条与第 8.2.1 条均规定按标准组合并考虑长期作用影响（用 $M_k,M_q$ 加权得到长期刚度 $B$）；2010 版才改为按准永久组合，这是两版的重要差异。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K14-01",
+    "type": "choice",
+    "prompt": "按 GB 50010-2002，钢筋混凝土受弯构件最大裂缝宽度的计算公式为：",
+    "options": [
+      {
+        "id": "A",
+        "text": "$w_{\\max}=\\alpha_{cr}\\psi\\dfrac{\\sigma_{sk}}{E_s}\\left(1.9c+0.08\\dfrac{d_{eq}}{\\rho_{te}}\\right)$"
+      },
+      {
+        "id": "B",
+        "text": "$w_{\\max}=\\psi\\dfrac{\\sigma_{sk}}{E_s}\\left(1.9c+0.08\\dfrac{d_{eq}}{\\rho_{te}}\\right)$"
+      },
+      {
+        "id": "C",
+        "text": "$w_{\\max}=\\alpha_{cr}\\psi\\dfrac{\\sigma_{sk}}{E_s}\\left(1.9c+0.08\\,d_{eq}\\,\\rho_{te}\\right)$"
+      },
+      {
+        "id": "D",
+        "text": "$w_{\\max}=\\alpha_{cr}\\dfrac{\\sigma_{sk}}{E_s}\\left(1.9c+0.08\\dfrac{d_{eq}}{\\rho_{te}}\\right)$"
+      }
+    ],
+    "answer": "A",
+    "analysis": "括号项即平均裂缝间距 $l_m$；B 漏了受力特征系数 $\\alpha_{cr}$，C 把 $d_{eq}/\\rho_{te}$ 写成乘积，D 漏了应变不均匀系数 $\\psi$。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K14-02",
+    "type": "choice",
+    "prompt": "裂缝间纵向受拉钢筋应变不均匀系数 $\\psi$ 的物理意义是：",
+    "options": [
+      {
+        "id": "A",
+        "text": "裂缝截面钢筋应力与钢筋屈服强度之比"
+      },
+      {
+        "id": "B",
+        "text": "平均裂缝间距范围内钢筋平均应变与裂缝截面处钢筋应变之比"
+      },
+      {
+        "id": "C",
+        "text": "受拉区混凝土平均应变与钢筋平均应变之比"
+      },
+      {
+        "id": "D",
+        "text": "长期荷载下裂缝宽度与短期裂缝宽度之比"
+      }
+    ],
+    "answer": "B",
+    "analysis": "$\\psi$ 反映裂缝间受拉混凝土协助钢筋抗拉的程度；$\\psi$ 越小说明裂缝间混凝土参与受拉的作用越强。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K14-03",
+    "type": "judge",
+    "prompt": "在其它条件不变时，把受拉钢筋由低强度大直径改为高强度小直径（总截面面积减小），可以减小构件最大裂缝宽度。",
+    "options": [
+      {
+        "id": "T",
+        "text": "正确"
+      },
+      {
+        "id": "F",
+        "text": "错误"
+      }
+    ],
+    "answer": "F",
+    "analysis": "$A_s$ 减小会使 $\\sigma_{sk}=M_k/(0.87h_0A_s)$ 升高、$\\rho_{te}$ 降低，$w_{\\max}$ 反而增大；减小裂缝宽度应增加钢筋面积或减小钢筋直径。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K14-04",
+    "type": "choice",
+    "prompt": "按 GB 50010-2002 表 3.3.4，处于一类环境（室内正常环境）的钢筋混凝土梁，在一般情况（不附加年平均相对湿度小于 60% 的条件）下，其最大裂缝宽度限值 $w_{\\lim}$ 取：",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.1 mm"
+      },
+      {
+        "id": "B",
+        "text": "0.2 mm"
+      },
+      {
+        "id": "C",
+        "text": "0.3 mm"
+      },
+      {
+        "id": "D",
+        "text": "0.4 mm"
+      }
+    ],
+    "answer": "C",
+    "analysis": "一类环境钢筋混凝土构件为三级裂缝控制，$w_{\\lim}=0.3$ mm（年平均相对湿度小于 60% 地区的受弯构件可采用括号内 0.4 mm）；二类、三类环境均为 0.2 mm。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": "Q-K14-05",
+    "type": "choice",
+    "prompt": "下列措施中，对减小钢筋混凝土受弯构件最大裂缝宽度无效或不利的是：",
+    "options": [
+      {
+        "id": "A",
+        "text": "增加受拉钢筋截面面积"
+      },
+      {
+        "id": "B",
+        "text": "在总截面积不变的前提下减小钢筋直径、增加根数"
+      },
+      {
+        "id": "C",
+        "text": "增大混凝土保护层厚度"
+      },
+      {
+        "id": "D",
+        "text": "用带肋钢筋代替光面钢筋"
+      }
+    ],
+    "answer": "C",
+    "analysis": "由 $l_m=1.9c+0.08d_{eq}/\\rho_{te}$ 可知保护层 $c$ 越大，平均裂缝间距越大，裂缝越宽；A 降低 $\\sigma_{sk}$ 并提高 $\\rho_{te}$，B 减小 $d_{eq}$，D 使 $\\nu$ 由 0.7 提高到 1.0，均有利于减小裂缝宽度。",
+    "source": "k12-14.md",
+    "confidence": "high",
+    "verified": true
+  }
+]
